@@ -8,32 +8,36 @@
     <link rel="icon" href="img/icon.png">
 </head>
 <body>
-    <div class="site_header">
-        <div class="header_item"><a href="index.html"><img src="img/logo.png" class="header_company_logo" alt="The company logo"></a></div>
-        <!--<div class="header_item"><span class="header_company_title">Insert Company Name</span></div>-->
+    <div class="site_header"> <!--Lachlan - Top bar / "Header" of page-->
+        <div class="header_item"> <!--Lachlan - Clickable logo to redirect to index.html-->
+            <a href="index.html"><img src="img/logo.png" class="header_company_logo" alt="The company logo"></a>
+        </div>
         <div class="dropdown"> <!--Dropdown menu template from https://www.w3schools.com/howto/howto_css_dropdown.asp-->
             <button class="dropbtn"><img src="img/menu.png" alt="Navigation Menu Icon" class="header_menu_image"></button>
-            <div class="dropdown-content">
+            <div class="dropdown-content"> <!--Drop down menu items to navigate site-->
               <a href="index.html">Main</a>
               <a href="about.html">About us</a>
               <a href="jobs.html">Jobs</a>
               <a href="apply.html">Apply</a>
-              <a href="mailto:info@companyname.com.au">E-Mail</a>
+              <a href="mailto:info@companyname.com.au">E-Mail</a> <!--Direct user to company email-->
             </div>
         </div>
     </div>
+
+    <!--Put all of the webpage content inside this div-->
     <div class="site_content">
         <h1>Jobs (Placeholder feel free to remove)</h1>
         <p>test</p>
     </div>
-    <footer>
-        <div class="site_footer">
-            <div class>
+
+    <footer> <!--Lachlan - Footer of website-->
+        <div class="site_footer"> <!--Custom class for layout-->
+            <span> <!--Jira Project Link-->
                 <a href="">TODO: JIRA PROJECT LINK</a>
-            </div>
-            <p class="site_footer_copyright">
+            </span> <!--Fake Copyright for asthetics-->
+            <span class="site_footer_copyright">
                 (Not) @ 2025 Copyright CompanyName | All rights reserved.
-            </p>
+            </span>
         </div>
     </footer>
 </body>
