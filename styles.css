@@ -2,10 +2,11 @@ body {
     background-color:rgb(19, 19, 19);
     margin:0;
 }
-h1,h2,h3,input,legend,p, h4, label,li,a,textarea,button {
+h1,h2,h3,input,legend,p, h4, label,li,a,textarea,button,select {
     font-family: sans-serif;
     color:antiquewhite
 }
+input::placeholder{color:rgb(160,160,160);}
 textarea{
     background-color: rgb(16,16,16);
 }
@@ -13,9 +14,10 @@ a:visited {color:#8583fa} /*Colour of link when it's been clicked before*/
 
 legend{font-size: larger;} /*Make sure legend (The "title" of each formdiv is larger*/
 
-input{
+input,select{
     border:none; /*Remove 90s looking border from all inputs including buttons etc*/
-    background-color: #5367c2;
+    background-color: #4d5da5;
+    
 }
 
 .header_company_title /*Apperance of text for the company title in the header*/
@@ -70,11 +72,13 @@ input{
     height:40px;
     background-color:rgb(144, 218, 101);
 }
+.site_form_submit:hover{ background-color: rgb(120, 180, 70); }
 .site_form_reset{
     width:45%;
     height:40px;
     background-color: rgb(248, 131, 131);
 }
+.site_form_reset:hover{ background-color: rgb(200, 110 ,110); }
 
 
 

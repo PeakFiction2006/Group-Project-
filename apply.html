@@ -9,14 +9,14 @@
 </head>
 <!--
     TODO:
-    + Regex Checks for names, address details, email/phone
+    + Fix checkbox only ever being capable of posting to php server one value
 -->
 <body>
     <div class="site_header">
         <div class="header_item"><a href="index.html"><img src="img/logo.png" class="header_company_logo" alt="The company logo"></a></div>
         <!--<div class="header_item"><span class="header_company_title">Insert Company Name</span></div>-->
-        <div class="dropdown">
-            <button class="dropbtn"><img src="img/menu.png"  class="header_company_logo"></button>
+        <div class="dropdown"> <!--Dropdown menu template from https://www.w3schools.com/howto/howto_css_dropdown.asp-->
+            <button class="dropbtn"><img src="img/menu.png" alt="Navigation Menu Icon"  class="header_company_logo"></button>
             <div class="dropdown-content">
               <a href="index.html">Main</a>
               <a href="about.html">About us</a>
@@ -33,7 +33,7 @@
             <legend>Job Application Form</legend>
                 <p> <!--List of Job References to select from-->
                     <label for="jobref">Job Reference Number</label>
-                    <select id="jobref" name="jobref" required="required">
+                    <select id="jobref" name="jobref" required>
                         <option value="">Please Select</option>
                         <option value="0">[Placeholder] 0</option>
                         <option value="1">[Placeholder] 1</option>
@@ -47,11 +47,11 @@
                         <legend>Essential</legend>
                         <p>
                         <label for="detail_name_first">First Name</label>
-                        <input type="text" id="detail_name_first" name="detail_name_first" required>
+                        <input type="text" id="detail_name_first" name="detail_name_first" pattern="(^[A-Za-z]+)" maxlength="20" required>
                         </p>
                         <p>
                         <label for="detail_name_last">Last Name</label>
-                        <input type="text" id="detail_name_last" name="detail_name_last" required>
+                        <input type="text" id="detail_name_last" name="detail_name_last" pattern="(^[A-Za-z]+)" maxlength="20" required>
                         </p>
                         
                         <label for="detail_birthdate">Birthdate</label>
@@ -76,19 +76,29 @@
                         <legend>Location</legend>
                         <p>
                             <label for="detail_location_street">Street</label>
-                            <input type="text" id="detail_location_street" name="detail_location_street" required>
+                            <input type="text" id="detail_location_street" name="detail_location_street" maxlength="40" required>
                         </p>
                         <p>
                             <label for="detail_location_suburbtown">Suburb/Town</label>
-                            <input type="text" id="detail_location_suburbtown" name="detail_location_suburbtown">
+                            <input type="text" id="detail_location_suburbtown" name="detail_location_suburbtown" maxlength="40" required>
                         </p>
                         <p>
                             <label for="detail_location_state">State</label>
-                            <input type="text" id="detail_location_state" name="detail_location_state" required>
+                            <select id="detail_location_state" name="detail_location_state" required>
+                                <option value="">Please Select</option>
+                                <option value="VIC">VIC</option>
+                                <option value="NSW">NSW</option>
+                                <option value="QLD">QLD</option>
+                                <option value="NT">NT</option>
+                                <option value="WA">WA</option>
+                                <option value="SA">SA</option>
+                                <option value="TAS">TAS</option>
+                                <option value="ACT">ACT</option>
+                            </select>
                         </p>
                         <p>
                             <label for="detail_location_postcode">Postcode</label>
-                            <input type="text" id="detail_location_postcode" name="detail_location_postcode" required>
+                            <input type="text" id="detail_location_postcode" name="detail_location_postcode" minlength="4" maxlength="4" placeholder="0000" pattern="^[0-9]{4}" required>
                         </p>
                     </fieldset>
 
@@ -96,11 +106,12 @@
                         <legend>Contact Details</legend>
                         <p>
                             <label for="detail_contact_email">Email</label>
-                            <input type="text" id="detail_contact_email" name="detail_contact_email">
+                            <!--Email Regex Pattern: https://stackoverflow.com/questions/5601647/html5-email-address-input-pattern-attribute -->
+                            <input type="text" id="detail_contact_email" name="detail_contact_email" required pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
                         </p>
                         <p>
-                            <label for="detail_contact_phone">Phone Number</label>
-                            <input type="text" id="detail_contact_phone" name="detail_contact_phone">
+                            <label for="detail_contact_phone">Phone Number (No Spaces)</label>
+                            <input type="text" id="detail_contact_phone" name="detail_contact_phone" pattern="^[0-9]{8,12}$" required>
                         </p>
                     </fieldset>
 
@@ -110,7 +121,7 @@
                             <legend>"Required Technical List"</legend>
                             <ol>
                                 <li>
-                                    <input id="skill0" type="checkbox" name="detail_skill" value="Programming" checked>
+                                    <input id="skill0" type="checkbox" name="detail_skill" value="Programming" checked required>
                                     <label for="skill0">Basic programming knowledge in JavaScript and PHP.</label>
                                 </li>
                                 <li>
@@ -134,6 +145,7 @@
                         </p>
                     </fieldset>
         </fieldset>
+        <br>
         <input class="site_form_submit" type="submit" name="Submit">
         <input class="site_form_reset" type="reset" name="Reset">
         </fieldset>
