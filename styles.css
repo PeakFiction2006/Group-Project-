@@ -1,24 +1,24 @@
+html{height:100%}
 body {
     background-color:rgb(19, 19, 19);
     margin:0;
+    display:flex;
+    flex-direction: column;
+    height: 100%;
 }
 h1,h2,h3,input,legend,p, h4, label,li,a,textarea,button,select {
     font-family: sans-serif;
     color:antiquewhite
 }
 input::placeholder{color:rgb(160,160,160);}
-textarea{
-    background-color: rgb(16,16,16);
-}
+textarea{ background-color: rgb(16,16,16);}
 a:visited {color:#8583fa} /*Colour of link when it's been clicked before*/
-
 legend{font-size: larger;} /*Make sure legend (The "title" of each formdiv is larger*/
-
 input,select{
     border:none; /*Remove 90s looking border from all inputs including buttons etc*/
-    background-color: #4d5da5;
-    
-}
+    background-color: #4d5da5;}
+
+
 
 .header_company_title /*Apperance of text for the company title in the header*/
 {
@@ -47,7 +47,7 @@ input,select{
 .site_footer{
     width: 100%;
     height: 40px;
-    position:fixed;
+    /*position:fixed;*/
     left:0px;
     bottom:0px;
     background-color: rgb(25, 25, 25);
@@ -65,6 +65,14 @@ input,select{
     padding-left: 2%;
     padding-right: 2%;
     margin-bottom: 60px;
+    flex-grow: 1;
+}
+.site_content_index_background{
+    background-image: url("img/stock_computer_2.png");
+    background-color: "#fffff";
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-grow: 1;
 }
 
 .site_form_submit{
