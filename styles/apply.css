@@ -1,0 +1,17 @@
+.site_form_submit{ /*Lachlan - Size and colour for submit button on application form*/
+    width:45%;
+    height:40px;
+    background-color:rgb(144, 218, 101);
+}
+
+.site_form_submit:hover{ background-color: rgb(120, 180, 70); } /*Lachlan - hover colour for submit*/
+
+.site_form_reset{ /*Lachlan - Size and colour for reset button on application form*/
+    width:45%;
+    height:40px;
+    background-color: rgb(248, 131, 131);
+}
+
+.site_form_reset:hover{ background-color: rgb(200, 110 ,110); } /*Lachlan - hover colur for reset*/
+
+

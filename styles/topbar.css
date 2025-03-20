@@ -1,0 +1,75 @@
+.site_header_company_logo {height: 100%;} /*Lachlan - Make sure logo doesn't become larger 
+than header by setting it to, and thus restricting it to 100%*/
+.site_header_menu_image {height: 50%; width:auto; min-height: 10px; min-width: 10px;}
+
+.site_header_item{ /*Lachlan - Just related to layout stuff*/
+    height: 100%;
+    align-content: center;
+}
+
+.site_header{ /*Lachlan - actual class for the header at the top of the page */
+    /*Not to be confused with HTML Header tags for metadata, this is for the topbar*/
+    background-color: rgba(25,25,25);/* rgb(32, 42, 179);*/
+    display: flex;
+    flex-direction: row;
+    height:10%;
+    width:100%;
+}
+
+.site_footer{ /*Lachlan - Custom Footer class for a div that goes inside <footer> tag */
+    width: 100%;
+    height: 25px;
+    background-color: rgb(25, 25, 25);
+    display:flex;
+    justify-content: space-between; /*Spread contents evenly around*/
+    align-items: center;
+}
+
+/*
+    Dropdown menu for page header originally sourced from
+    https://www.w3schools.com/howto/howto_css_dropdown.asp
+*/
+
+/* The container <div> - needed to position the dropdown content */
+.site_menu_dropdown {
+    position: relative;
+    margin-left: auto; 
+    margin-right: 0;
+    height:100%;
+}
+
+/* Dropdown Button */
+.site_menu_dropdown_button {
+    background-color: #9aacff;
+    border: none;
+    width:100%;
+    height:100%;
+    min-width: 80px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.site_menu_dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #333333;
+    width:100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.site_menu_dropdown_content a {
+color: rgb(202, 200, 200);
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+/* Change color of dropdown links on hover */
+.site_menu_dropdown_content a:hover {background-color: #444444;}
+
+/* Show the dropdown menu on hover */
+.site_menu_dropdown:hover .site_menu_dropdown_content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.site_menu_dropdown:hover .site_menu_dropdown_button {background-color: #8583fa;}

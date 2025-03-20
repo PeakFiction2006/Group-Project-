@@ -1,0 +1,7 @@
+.site_content_index_background{ /* Lachlan - (Version for index.html with background) Think of this as a custom body class for divs */
+    padding-left: 2%;
+    padding-right: 2%;
+    background-image: url("images/stock_computer_2.png"); /*set background picture to this*/
+    background-size: cover; /*Cover avaiable area with it*/
+    flex-grow: 1;
+}
