@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMPANY NAME - Application Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="site_header">
+        
+        <a href="about.html"><h1><img src="" alt="The company logo">Insert Company Name</h1></a>
+
+    </div>
+    <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
+        <fieldset>
+            <legend>Job Application Form</legend>
+                <p> <!--List of Job References to select from-->
+                    <label for="jobref">Job Reference Number</label>
+                    <select id="jobref" name="jobref" required="required">
+                        <option value="">Please Select</option>
+                        <option value="0">[Placeholder] 0</option>
+                        <option value="1">[Placeholder] 1</option>
+                        <option value="2">[Placeholder] 2</option>
+                        <option value="3">[Placeholder] 3</option>
+                    </select>
+                </p>
+                <fieldset>
+                    <legend>Applicant Details</legend>
+                    <fieldset>
+                        <legend>Essential</legend>
+                        <p>
+                        <label for="detail_name_first">First Name</label>
+                        <input type="text" id="detail_name_first" name="detail_name_first">
+                        </p>
+                        <p>
+                        <label for="detail_name_last">Last Name</label>
+                        <input type="text" id="detail_name_last" name="detail_name_last">
+                        </p>
+                        
+                        <label for="detail_birthdate">Birthdate</label>
+                        <input type="date" id="detail_birthdate" name="detail_birthdate">
+                    </fieldset>
+                    <fieldset>
+                        
+                        <legend>Gender</legend>
+                        <p>
+                            <label for="gender_m">Male</label>
+                            <input type="radio" value="Male" id="gender_m" name="detail_gender">
+
+                            <label for="gender_f">Female</label>
+                            <input type="radio" value="Female" id="gender_f" name="detail_gender">
+
+                            <label for="gender_o">Other</label>
+                            <input type="radio" value="Other" id="gender_o" name="detail_gender">
+                        </p>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Location</legend>
+                        <p>
+                            <label for="detail_location_street">Street</label>
+                            <input type="text" id="detail_location_street">
+                        </p>
+                        <p>
+                            <label for="detail_location_suburbtown">Suburb/Town</label>
+                            <input type="text" id="detail_location_suburbtown">
+                        </p>
+                        <p>
+                            <label for="detail_location_state">State</label>
+                            <input type="text" id="detail_location_state">
+                        </p>
+                        <p>
+                            <label for="detail_location_postcode">Postcode</label>
+                            <input type="text" id="detail_location_postcode">
+                        </p>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Contact Details</legend>
+                        <p>
+                            <label for="detail_contact_email">Email</label>
+                            <input type="text" id="detail_contact_email">
+                        </p>
+                        <p>
+                            <label for="detail_contact_phone">Phone Number</label>
+                            <input type="text" id="detail_contact_phone">
+                        </p>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Skills and Technical Abilities</legend>
+                        <fieldset>
+                            <legend>"Required Technical List"</legend>
+                            <ol>
+                                <li>
+                                <label for="skill0">Basic programming knowledge in JS, PHP</label>
+                                <input id="skill0" type="checkbox" name="detail_skill" value="HTML" checked>
+                                </li>
+                            </ol>
+                        </fieldset>
+                        <p>
+                            <label for="detail_skill_other">Other Skills</label>
+                            <br>
+                            <textarea id="detail_skill_other" placeholder="Type any other skill sets you have" rows="10" cols="80"></textarea>
+                        </p>
+                    </fieldset>
+        </fieldset>
+
+        </fieldset>
+    </form>
+</body>
+</html>
