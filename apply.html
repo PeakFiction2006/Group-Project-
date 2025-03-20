@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="logo.png">
 </head>
+<!--
+    TODO:
+    + Regex Checks for names, address details, email/phone
+-->
 <body>
     <div class="site_header">
         
@@ -108,8 +112,20 @@
                             <legend>"Required Technical List"</legend>
                             <ol>
                                 <li>
-                                <label for="skill0">Basic programming knowledge in JS, PHP</label>
-                                <input id="skill0" name="skill0" type="checkbox" name="detail_skill" value="HTML" checked>
+                                    <input id="skill0" type="checkbox" name="detail_skill" value="Programming" checked>
+                                    <label for="skill0">Basic programming knowledge in JavaScript and PHP.</label>
+                                </li>
+                                <li>
+                                    <input id="skill1" type="checkbox" name="detail_skill" value="MySQL">
+                                    <label for="skill1">Able to use MySQL Databases.</label>
+                                </li>
+                                <li>
+                                    <input id="skill2" type="checkbox" name="detail_skill" value="Html">
+                                    <label for="skill2">Able to use HTML and CSS.</label>
+                                </li>
+                                <li>
+                                    <input id="skill4" type="checkbox" name="detail_skill" value="Teamwork">
+                                    <label for="skill4">Team Worker</label>
                                 </li>
                             </ol>
                         </fieldset>
