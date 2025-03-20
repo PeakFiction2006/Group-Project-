@@ -33,9 +33,9 @@
         <h1>Apply now!</h1> <!--Title-->
         <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php"> <!--Post request-->
             <fieldset>
-                <legend>Job Application Form</legend>
-                    <p> <!--List of Job References to select from-->
-                        <label for="jobref">Job Reference Number</label>
+                    <!--<legend>Job Application Form</legend> --> <!--Legend here is a bit unessecary and confusing looking-->
+                    <fieldset> <!--List of Job References to select from-->
+                        <legend for="jobref">Job Reference Number</legend>
                         <select id="jobref" name="jobref" required>
                             <option value="">Please Select</option>
                             <option value="0">[Placeholder] 0</option>
@@ -43,11 +43,9 @@
                             <option value="2">[Placeholder] 2</option>
                             <option value="3">[Placeholder] 3</option>
                         </select>
-                    </p>
+                    </fieldset>
                     <fieldset>
-                        <legend>Applicant Details</legend>
-                        <fieldset>
-                            <legend>Essential</legend> <!--Name, birthdate-->
+                            <legend>Details</legend> <!--Name, birthdate-->
                             <p>
                             <label for="detail_name_first">First Name</label>     <!--Lachlan- Make sure name only has alphabetical characters with max length of 20-->
                             <input type="text" id="detail_name_first" name="detail_name_first" pattern="(^[A-Za-z]+)" maxlength="20" required>
@@ -118,8 +116,7 @@
                             </p>
                         </fieldset>
 
-                        <fieldset>
-                            <legend>Skills and Technical Abilities</legend>
+              
                             <fieldset>
                                 <legend>Required Technical List</legend> <!--Generic skills check list-->
                                 <ol>
@@ -141,13 +138,13 @@
                                     </li>
                                 </ol>
                             </fieldset>
-                            <p>
-                                <label for="detail_skill_other">Other Skills</label>
-                                <br> <!--Other skill textarea input-->
+                            <fieldset>
+                                <legend>Other Skills</legend>
+         
                                 <textarea id="detail_skill_other" name="detail_skill_other" placeholder="Type any other skill sets you have" rows="10" cols="80"></textarea>
-                            </p>
-                        </fieldset>
-            </fieldset>
+                            </fieldset>
+                      
+        
             <br>
             <!--Submit / Reset buttons, with css classes to define their appearance-->
             <input class="site_form_submit" type="submit" name="Submit">
