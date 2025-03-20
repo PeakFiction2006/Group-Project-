@@ -8,8 +8,9 @@
     <link rel="icon" href="img/icon.png">
 </head>
 <!--
+    apply.html - Managed by Lachlan Phillips
     TODO:
-    + Fix checkbox only ever being capable of posting to php server one value
+    + Fix skills checkboxs only ever being capable of posting to php server one value
 -->
 <body>
     <div class="site_header">
@@ -26,9 +27,9 @@
             </div>
         </div>
     </div>
-    <div class="site_content">
-    <h1>Apply now!</h1>
-    <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
+    <div class="site_content"> <!--Site content class is like a custom body class for a div in this case-->
+    <h1>Apply now!</h1> <!--Title-->
+    <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php"> <!--Post request-->
         <fieldset>
             <legend>Job Application Form</legend>
                 <p> <!--List of Job References to select from-->
@@ -44,13 +45,13 @@
                 <fieldset>
                     <legend>Applicant Details</legend>
                     <fieldset>
-                        <legend>Essential</legend>
+                        <legend>Essential</legend> <!--Name, birthdate-->
                         <p>
-                        <label for="detail_name_first">First Name</label>
+                        <label for="detail_name_first">First Name</label>     <!--Lachlan- Make sure name only has alphabetical characters with max length of 20-->
                         <input type="text" id="detail_name_first" name="detail_name_first" pattern="(^[A-Za-z]+)" maxlength="20" required>
                         </p>
                         <p>
-                        <label for="detail_name_last">Last Name</label>
+                        <label for="detail_name_last">Last Name</label>      <!--Lachlan- Make sure name only has alphabetical characters with max length of 20-->
                         <input type="text" id="detail_name_last" name="detail_name_last" pattern="(^[A-Za-z]+)" maxlength="20" required>
                         </p>
                         
@@ -59,16 +60,16 @@
                     </fieldset>
                     <fieldset>
                         
-                        <legend>Gender</legend>
+                        <legend>Gender</legend> <!--Select gender radio buttons-->
                         <p>
-                            <label for="gender_m">Male</label>
                             <input type="radio" value="Male" id="gender_m" name="detail_gender" required>
-
-                            <label for="gender_f">Female</label>
+                            <label for="gender_m">Male</label>
+                            
                             <input type="radio" value="Female" id="gender_f" name="detail_gender">
+                            <label for="gender_f">Female</label>
 
-                            <label for="gender_o">Other</label>
                             <input type="radio" value="Other" id="gender_o" name="detail_gender">
+                            <label for="gender_o">Other</label>
                         </p>
                     </fieldset>
 
@@ -97,7 +98,7 @@
                             </select>
                         </p>
                         <p>
-                            <label for="detail_location_postcode">Postcode</label>
+                            <label for="detail_location_postcode">Postcode</label> <!--Postcode, ensure length equals 4, and all digits are numbers-->
                             <input type="text" id="detail_location_postcode" name="detail_location_postcode" minlength="4" maxlength="4" placeholder="0000" pattern="^[0-9]{4}" required>
                         </p>
                     </fieldset>
@@ -110,7 +111,7 @@
                             <input type="text" id="detail_contact_email" name="detail_contact_email" required pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
                         </p>
                         <p>
-                            <label for="detail_contact_phone">Phone Number (No Spaces)</label>
+                            <label for="detail_contact_phone">Phone Number (No Spaces)</label>        <!--Lachlan - Make sure number only has numbers, and is between 8 and 12 characters long-->
                             <input type="text" id="detail_contact_phone" name="detail_contact_phone" pattern="^[0-9]{8,12}$" required>
                         </p>
                     </fieldset>
@@ -118,7 +119,7 @@
                     <fieldset>
                         <legend>Skills and Technical Abilities</legend>
                         <fieldset>
-                            <legend>"Required Technical List"</legend>
+                            <legend>Required Technical List</legend> <!--Generic skills check list-->
                             <ol>
                                 <li>
                                     <input id="skill0" type="checkbox" name="detail_skill" value="Programming" checked required>
@@ -140,12 +141,13 @@
                         </fieldset>
                         <p>
                             <label for="detail_skill_other">Other Skills</label>
-                            <br>
+                            <br> <!--Other skill textarea input-->
                             <textarea id="detail_skill_other" name="detail_skill_other" placeholder="Type any other skill sets you have" rows="10" cols="80"></textarea>
                         </p>
                     </fieldset>
         </fieldset>
         <br>
+        <!--Submit / Reset buttons, with css classes to define their appearance-->
         <input class="site_form_submit" type="submit" name="Submit">
         <input class="site_form_reset" type="reset" name="Reset">
         </fieldset>
