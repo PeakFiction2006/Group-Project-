@@ -68,6 +68,8 @@ input,select{
     flex-grow: 1;
 }
 .site_content_index_background{
+    padding-left: 2%;
+    padding-right: 2%;
     background-image: url("img/stock_computer_2.png");
     background-color: "#fffff";
     background-repeat: no-repeat;
