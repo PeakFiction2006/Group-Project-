@@ -60,19 +60,19 @@
                         <legend>Location</legend>
                         <p>
                             <label for="detail_location_street">Street</label>
-                            <input type="text" id="detail_location_street">
+                            <input type="text" id="detail_location_street" name="detail_location_street">
                         </p>
                         <p>
                             <label for="detail_location_suburbtown">Suburb/Town</label>
-                            <input type="text" id="detail_location_suburbtown">
+                            <input type="text" id="detail_location_suburbtown" name="detail_location_suburbtown">
                         </p>
                         <p>
                             <label for="detail_location_state">State</label>
-                            <input type="text" id="detail_location_state">
+                            <input type="text" id="detail_location_state" name="detail_location_state">
                         </p>
                         <p>
                             <label for="detail_location_postcode">Postcode</label>
-                            <input type="text" id="detail_location_postcode">
+                            <input type="text" id="detail_location_postcode" name="detail_location_postcode">
                         </p>
                     </fieldset>
 
@@ -80,11 +80,11 @@
                         <legend>Contact Details</legend>
                         <p>
                             <label for="detail_contact_email">Email</label>
-                            <input type="text" id="detail_contact_email">
+                            <input type="text" id="detail_contact_email" name="detail_contact_email">
                         </p>
                         <p>
                             <label for="detail_contact_phone">Phone Number</label>
-                            <input type="text" id="detail_contact_phone">
+                            <input type="text" id="detail_contact_phone" name="detail_contact_phone">
                         </p>
                     </fieldset>
 
@@ -95,19 +95,21 @@
                             <ol>
                                 <li>
                                 <label for="skill0">Basic programming knowledge in JS, PHP</label>
-                                <input id="skill0" type="checkbox" name="detail_skill" value="HTML" checked>
+                                <input id="skill0" name="skill0" type="checkbox" name="detail_skill" value="HTML" checked>
                                 </li>
                             </ol>
                         </fieldset>
                         <p>
                             <label for="detail_skill_other">Other Skills</label>
                             <br>
-                            <textarea id="detail_skill_other" placeholder="Type any other skill sets you have" rows="10" cols="80"></textarea>
+                            <textarea id="detail_skill_other" name="detail_skill_other" placeholder="Type any other skill sets you have" rows="10" cols="80"></textarea>
                         </p>
                     </fieldset>
         </fieldset>
 
         </fieldset>
+        <input type="submit" name="Submit">
+        <input type="reset" name="Reset">
     </form>
 </body>
 </html>

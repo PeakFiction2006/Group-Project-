@@ -1,22 +1,17 @@
 body {
-    background-color: rgb(41, 41, 41);
+    
 }
 h1,h2,h3,input,legend,p, h4, label,li,a {
     font-family: sans-serif;
-    color:rgb(185, 185, 185);
-
 }
 
 legend{
     font-size: larger;
 }
 input,textarea{
-    background-color: rgb(88, 88, 88);
-    border-color: none;
-
 }
 
 .site_header{
-    background-color: rgb(158, 158, 158);
+    background-color: rgb(230, 228, 228);
    
 }
