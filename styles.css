@@ -6,7 +6,7 @@ body {
     flex-direction: column; /*Lachlan - Ensure flow of elements is vertical overall*/
     height: 100%; /* Lachlan - Ensuring height is set to 100% of page, Related to ensuring that divs can fill page*/
 }
-h1,h2,h3,input,legend,p, h4, label,li,a,textarea,button,select { /* Lachlan - Set font-family and color for almost all elements used*/
+h1,h2,h3,input,legend,p, h4, label,li,a,textarea,button,select,span { /* Lachlan - Set font-family and color for almost all elements used*/
     font-family: sans-serif;
     color:antiquewhite
 }
@@ -20,6 +20,7 @@ input,select{ /* - Lachlan*/
 
 .header_company_logo {height: 100%;} /*Lachlan - Make sure logo doesn't become larger 
 than header by setting it to, and thus restricting it to 100%*/
+.header_menu_image {height: 50%; width:auto; min-height: 10px; min-width: 10px;}
 
 .header_item{ /*Lachlan - Just related to layout stuff*/
     height: 100%;
@@ -33,25 +34,19 @@ than header by setting it to, and thus restricting it to 100%*/
     flex-direction: row;
     margin-bottom: 0px;
     margin-top:0px;
-    height:50px;
+    height:10%;
     width:100%;
 }
 .site_footer{ /*Lachlan - Custom Footer class for a div that goes inside <footer> tag */
     width: 100%;
-    height: 40px;
+    height: 25px;
     /*position:fixed;*/
     left:0px;
     bottom:0px;
     background-color: rgb(25, 25, 25);
     display:flex;
-    justify-content: space-around; /*Spread contents evenly around*/
-    padding: 10px;
-}
-.site_footer_copyright{ /*Lachlan - Make sure text for copy right is white */
-    color:white;
-}
-.site_footer div{ /* Lachlan - Make sure all divs in footer are centered, in this case vertically*/
-    align-self: center;
+    justify-content: space-between; /*Spread contents evenly around*/
+    align-items: center;
 }
 .site_content{ /* Lachlan - Think of this as a custom body class for divs */
     padding-left: 2%;
@@ -92,14 +87,10 @@ than header by setting it to, and thus restricting it to 100%*/
 /* Dropdown Button */
 .dropbtn {
     background-color: #9aacff;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
     border: none;
     width:100%;
     height:100%;
     min-width: 80px;
-
   }
 
 /* The container <div> - needed to position the dropdown content */
@@ -107,6 +98,7 @@ than header by setting it to, and thus restricting it to 100%*/
 position: relative;
 margin-left: auto; 
 margin-right: 0;
+height:100%;
 }
 
 /* Dropdown Content (Hidden by Default) */
