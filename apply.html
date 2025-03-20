@@ -48,11 +48,11 @@
                             <legend>Details</legend> <!--Name, birthdate-->
                             <p>
                             <label for="detail_name_first">First Name</label>     <!--Lachlan- Make sure name only has alphabetical characters with max length of 20-->
-                            <input type="text" id="detail_name_first" name="detail_name_first" pattern="(^[A-Za-z]+)" maxlength="20" required>
+                            <input type="text" id="detail_name_first" name="detail_name_first" pattern="(^[A-Za-z]+)" maxlength="20" placeholder="First Name" required>
                             </p>
                             <p>
                             <label for="detail_name_last">Last Name</label>      <!--Lachlan- Make sure name only has alphabetical characters with max length of 20-->
-                            <input type="text" id="detail_name_last" name="detail_name_last" pattern="(^[A-Za-z]+)" maxlength="20" required>
+                            <input type="text" id="detail_name_last" name="detail_name_last" pattern="(^[A-Za-z]+)" maxlength="20" placeholder="Last Name" required>
                             </p>
                             
                             <label for="detail_birthdate">Birthdate</label>
@@ -108,11 +108,11 @@
                             <p>
                                 <label for="detail_contact_email">Email</label>
                                 <!--Email Regex Pattern: https://stackoverflow.com/questions/5601647/html5-email-address-input-pattern-attribute -->
-                                <input type="text" id="detail_contact_email" name="detail_contact_email" required pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+                                <input type="text" id="detail_contact_email" name="detail_contact_email" required pattern="[^@\s]+@[^@\s]+\.[^@\s]+" placeholder="someone@something.com">
                             </p>
                             <p>
                                 <label for="detail_contact_phone">Phone Number (No Spaces)</label>        <!--Lachlan - Make sure number only has numbers, and is between 8 and 12 characters long-->
-                                <input type="text" id="detail_contact_phone" name="detail_contact_phone" pattern="^[0-9]{8,12}$" required>
+                                <input type="text" id="detail_contact_phone" name="detail_contact_phone" pattern="^[0-9]{8,12}$" required placeholder="0498099099">
                             </p>
                         </fieldset>
 
