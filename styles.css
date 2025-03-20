@@ -18,11 +18,11 @@ input,select{ /* - Lachlan*/
     border:none; /*Remove 90s looking border from all inputs including buttons etc*/
     background-color: #4d5da5;}
 
-.header_company_logo {height: 100%;} /*Lachlan - Make sure logo doesn't become larger 
+.site_header_company_logo {height: 100%;} /*Lachlan - Make sure logo doesn't become larger 
 than header by setting it to, and thus restricting it to 100%*/
-.header_menu_image {height: 50%; width:auto; min-height: 10px; min-width: 10px;}
+.site_header_menu_image {height: 50%; width:auto; min-height: 10px; min-width: 10px;}
 
-.header_item{ /*Lachlan - Just related to layout stuff*/
+.site_header_item{ /*Lachlan - Just related to layout stuff*/
     height: 100%;
     align-content: center;
     padding-right: 10px;
@@ -84,35 +84,36 @@ than header by setting it to, and thus restricting it to 100%*/
     https://www.w3schools.com/howto/howto_css_dropdown.asp
 */
 
+
+/* The container <div> - needed to position the dropdown content */
+.site_menu_dropdown {
+    position: relative;
+    margin-left: auto; 
+    margin-right: 0;
+    height:100%;
+}
+
 /* Dropdown Button */
-.dropbtn {
+.site_menu_dropdown_button {
     background-color: #9aacff;
     border: none;
     width:100%;
     height:100%;
     min-width: 80px;
-  }
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-position: relative;
-margin-left: auto; 
-margin-right: 0;
-height:100%;
 }
 
 /* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-display: none;
-position: absolute;
-background-color: #333333;
-width:100%;
-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-z-index: 1;
+.site_menu_dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #333333;
+    width:100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
 
 /* Links inside the dropdown */
-.dropdown-content a {
+.site_menu_dropdown_content a {
 color: rgb(202, 200, 200);
 padding: 12px 16px;
 text-decoration: none;
@@ -120,10 +121,10 @@ display: block;
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #444444;}
+.site_menu_dropdown_content a:hover {background-color: #444444;}
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
+.site_menu_dropdown:hover .site_menu_dropdown_content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #8583fa;}
+.site_menu_dropdown:hover .site_menu_dropdown_button {background-color: #8583fa;}
