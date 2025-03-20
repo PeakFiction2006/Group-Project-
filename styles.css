@@ -1,9 +1,13 @@
 body {
-    background-color:rgb(255, 255, 255);
+    background-color:rgb(19, 19, 19);
     margin:0;
 }
 h1,h2,h3,input,legend,p, h4, label,li,a,textarea,button {
     font-family: sans-serif;
+    color:antiquewhite
+}
+textarea{
+    background-color: rgb(16,16,16);
 }
 a:visited {color:#8583fa} /*Colour of link when it's been clicked before*/
 
@@ -11,7 +15,7 @@ legend{font-size: larger;} /*Make sure legend (The "title" of each formdiv is la
 
 input{
     border:none; /*Remove 90s looking border from all inputs including buttons etc*/
-    background-color: #9aacff;
+    background-color: #5367c2;
 }
 
 .header_company_title /*Apperance of text for the company title in the header*/
@@ -30,12 +34,12 @@ input{
     padding-right: 10px;
 }
 .site_header{
-    background-color: rgb(32, 42, 179);
+    background-color: rgba(25,25,25);/* rgb(32, 42, 179);*/
     display: flex;
     flex-direction: row;
     margin-bottom: 10px;
     margin-top:0px;
-    height:80px;
+    height:50px;
     width:100%;
 }
 .site_footer{
@@ -44,23 +48,27 @@ input{
     position:fixed;
     left:0px;
     bottom:0px;
-    background-color: rgb(32, 42, 179);
+    background-color: rgb(25, 25, 25);
     display:flex;
+    justify-content: space-around;
     padding: 10px;
 }
+.site_footer_copyright{
+    color:white;
+}
 .site_footer div{
-    margin:0;
     align-self: center;
 }
 .site_content{
     padding-left: 2%;
+    padding-right: 2%;
     margin-bottom: 60px;
 }
 
 .site_form_submit{
     width:45%;
     height:40px;
-    background-color:rgb(174, 248, 131);
+    background-color:rgb(144, 218, 101);
 }
 .site_form_reset{
     width:45%;
@@ -84,6 +92,7 @@ input{
     border: none;
     width:100%;
     height:100%;
+    min-width: 80px;
 
   }
 
@@ -98,7 +107,7 @@ margin-right: 0;
 .dropdown-content {
 display: none;
 position: absolute;
-background-color: #f1f1f1;
+background-color: #333333;
 width:100%;
 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 z-index: 1;
@@ -106,14 +115,14 @@ z-index: 1;
 
 /* Links inside the dropdown */
 .dropdown-content a {
-color: black;
+color: rgb(202, 200, 200);
 padding: 12px 16px;
 text-decoration: none;
 display: block;
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {background-color: #444444;}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
