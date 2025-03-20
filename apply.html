@@ -5,13 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COMPANY NAME - Application Portal</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.png">
 </head>
 <body>
     <div class="site_header">
         
-        <a href="about.html"><h1><img src="" alt="The company logo">Insert Company Name</h1></a>
-
+        <div class="header_item"><a href="about.html"><img src="logo.png" class="header_company_logo" alt="The company logo"></a></div>
+        <div class="header_item"><span class="header_company_title">Insert Company Name</span></div>
+        
+        <div class="dropdown">
+            <button class="dropbtn">Site Navigation</button>
+            <div class="dropdown-content">
+              <a href="index.html">Main</a>
+              <a href="about.html">About us</a>
+              <a href="jobs.html">Jobs</a>
+              <a href="apply.html">Apply</a>
+              <a href="mailto:info@companyname.com.au">E-Mail</a>
+            </div>
+        </div>
     </div>
+    <div class="site_content">
+    <h1>Apply now!</h1>
     <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
         <fieldset>
             <legend>Job Application Form</legend>
@@ -106,10 +120,17 @@
                         </p>
                     </fieldset>
         </fieldset>
-
+        <input class="site_form_submit" type="submit" name="Submit">
+        <input class="site_form_reset" type="reset" name="Reset">
         </fieldset>
-        <input type="submit" name="Submit">
-        <input type="reset" name="Reset">
     </form>
+</div>
+    <footer>
+        <div class="site_footer">
+            <div>
+                <a href="">TODO: JIRA PROJECT LINK</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
