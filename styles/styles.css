@@ -18,12 +18,24 @@ input::placeholder{color:rgb(160,160,160);} /*Lachlan - Change colour of placeho
 
 a:visited {color:#8583fa} /*Lachlan - Colour of link when it's been clicked before*/
 
-textarea{ background-color: rgb(16,16,16);} /*-Lachlan*/
+textarea{ /*-Lachlan*/
+    background-color: rgb(16,16,16);
+    width: 100%;
+    min-height: 100px;
+} 
 
 legend{font-size: larger;} /*Lachlan - Make sure legend (The "title" of each formdiv is larger*/
 
-input,select{ /* - Lachlan*/
+input,select{ /* - Lachlan, background of colors*/
     background-color: #4d5da5;
+}
+input:hover, select:hover { /*Fade background of inputs to darker colour*/
+    background-color: #2b3871;
+}
+
+div, button, input, select, option,textarea, li, section, label,a, fieldset { /* Lachlan - Make everything rounded*/
+    border-radius: 10px;
+    transition: background-color 250ms;/*Make any CSS change to background-colour fade transition in 250ms*/
 }
 
 
@@ -35,7 +47,8 @@ input,select{ /* - Lachlan*/
     padding-left: 2%;
     padding-right: 2%;
     margin-bottom: 60px;
-    flex-grow: 1;
+    flex-grow: 1; /*ensure it fills the site content area*/
+    border-radius: 0; /*Override the roundness attributes set above*/
 }
 
 /*=========================================================================*/
@@ -50,6 +63,7 @@ input,select{ /* - Lachlan*/
     background-image: url("images/stock_computer_2.png"); /*set background picture to this*/
     background-size: cover; /*Cover avaiable area with it*/
     flex-grow: 1;
+    border-radius: 0;
 }
 
 .site_content_index_amazingquote{ /*Lachlan - For the centered quotes */
@@ -68,6 +82,23 @@ input,select{ /* - Lachlan*/
 /*=========================================================================*/
 /*apply.html*/
 /*=========================================================================*/
+.site_form_container { /*Lachlan - For the container that contains all the form submission things*/
+    background-color: rgb(26, 26, 26);
+    padding: 1%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.site_form_container_section{
+    background-color: #131313;
+
+}
+.site_form_submit_area { /*Lachlan - For the submit and reset buttons, makes sure they are spread evenly horizontally*/
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly; 
+}
 .site_form_submit{ /*Lachlan - Size and colour for submit button on application form*/
     width:45%;
     height:40px;
@@ -83,6 +114,7 @@ input,select{ /* - Lachlan*/
 }
 
 .site_form_reset:hover{ background-color: rgb(200, 110 ,110); } /*Lachlan - hover colur for reset*/
+
 /*=========================================================================*/
 
 

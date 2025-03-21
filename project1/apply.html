@@ -34,9 +34,9 @@
     <div class="site_content"> <!--Site content class is like a custom body class for a div in this case-->
         <h1>Apply now!</h1> <!--Title-->
         <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php"> <!--Post request-->
-            <fieldset>
+            <div class="site_form_container">
                     <!--<legend>Job Application Form</legend> --> <!--Legend here is a bit unessecary and confusing looking-->
-                    <fieldset> <!--List of Job References to select from-->
+                    <fieldset  class="site_form_container_section"> <!--List of Job References to select from-->
                         <legend for="jobref">Job Reference Number</legend>
                         <select id="jobref" name="jobref" required>
                             <option value="">Please Select</option>
@@ -46,7 +46,7 @@
                             <option value="3">[Placeholder] 3</option>
                         </select>
                     </fieldset>
-                    <fieldset>
+                    <fieldset  class="site_form_container_section">
                             <legend>Details</legend> <!--Name, birthdate-->
                             <p>
                             <label for="detail_name_first">First Name</label>     <!--Lachlan- Make sure name only has alphabetical characters with max length of 20-->
@@ -60,7 +60,7 @@
                             <label for="detail_birthdate">Birthdate</label>
                             <input type="date" id="detail_birthdate" name="detail_birthdate" required>
                         </fieldset>
-                        <fieldset>
+                        <fieldset class="site_form_container_section">
                             
                             <legend>Gender</legend> <!--Select gender radio buttons-->
                             <p>
@@ -75,7 +75,7 @@
                             </p>
                         </fieldset>
 
-                        <fieldset>
+                        <fieldset class="site_form_container_section">
                             <legend>Location</legend>
                             <p>
                                 <label for="detail_location_street">Street</label>
@@ -105,7 +105,7 @@
                             </p>
                         </fieldset>
 
-                        <fieldset>
+                        <fieldset  class="site_form_container_section">
                             <legend>Contact Details</legend>
                             <p>
                                 <label for="detail_contact_email">Email</label>
@@ -119,7 +119,7 @@
                         </fieldset>
 
               
-                            <fieldset>
+                            <fieldset  class="site_form_container_section">
                                 <legend>Required Technical List</legend> <!--Generic skills check list-->
                                 <ol>
                                     <li>
@@ -140,18 +140,20 @@
                                     </li>
                                 </ol>
                             </fieldset>
-                            <fieldset>
+                            <fieldset  class="site_form_container_section">
                                 <legend>Other Skills</legend>
          
-                                <textarea id="detail_skill_other" name="detail_skill_other" placeholder="Type any other skill sets you have" rows="10" cols="80"></textarea>
+                                <textarea id="detail_skill_other" name="detail_skill_other" placeholder="Type any other skill sets you have"></textarea>
                             </fieldset>
                       
         
             <br>
-            <!--Submit / Reset buttons, with css classes to define their appearance-->
-            <input class="site_form_submit" type="submit" name="Submit">
-            <input class="site_form_reset" type="reset" name="Reset">
-            </fieldset>
+            <div class="site_form_submit_area"> <!--For spreading buttons evenly-->
+                <!--Submit / Reset buttons, with css classes to define their appearance-->
+                <input class="site_form_submit" type="submit" name="Submit">
+                <input class="site_form_reset" type="reset" name="Reset">
+            </div>
+        </div>
         </form>
     </div>
 
