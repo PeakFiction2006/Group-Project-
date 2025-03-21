@@ -1,3 +1,6 @@
+/*=========================================================================*/
+/*Core*/
+/*=========================================================================*/
 html{height:100%} /* Lachlan - Ensuring height is set to 100% of page, Related to ensuring that divs can fill page*/
 
 body { 
@@ -8,47 +11,49 @@ body {
     height: 100%; /* Lachlan - Ensuring height is set to 100% of page, Related to ensuring that divs can fill page*/
 }
 
-h1,h2,h3,input,legend,p, h4, label,li,a,textarea,button,select,span { /* Lachlan - Set font-family and color for almost all elements used*/
-    font-family: sans-serif;
-    color:antiquewhite;
-    border:none; /*Remove border from buttons, inputs and the like*/
-}
-
-input::placeholder{color:rgb(160,160,160);} /*Lachlan - Change colour of placeholder text for input */
-
-a:visited {color:#8583fa} /*Lachlan - Colour of link when it's been clicked before*/
-
-textarea{ /*-Lachlan*/
-    background-color: rgb(16,16,16);
-    width: 100%;
-    min-height: 100px;
-} 
-
-legend{font-size: larger;} /*Lachlan - Make sure legend (The "title" of each formdiv is larger*/
-
-input,select{ /* - Lachlan, background of colors*/
-    background-color: #4d5da5;
-}
-input:hover, select:hover { /*Fade background of inputs to darker colour*/
-    background-color: #2b3871;
-}
-
-div, button, input, select, option,textarea, li, section, label,a, fieldset { /* Lachlan - Make everything rounded*/
-    border-radius: 10px;
-    transition: background-color 250ms;/*Make any CSS change to background-colour fade transition in 250ms*/
-}
-
-
-
 /*=========================================================================*/
 /*Whole site*/
 /*=========================================================================*/
 .site_content{ /* Lachlan - Think of this as a custom body class for divs */
     padding-left: 2%;
     padding-right: 2%;
-    margin-bottom: 60px;
+    margin-bottom: 1.5%;
     flex-grow: 1; /*ensure it fills the site content area*/
-    border-radius: 0; /*Override the roundness attributes set above*/
+    border-radius: 0; /*Override the roundness attributes set below*/
+}
+
+div, button, input, select, option,textarea, li, section, label,a, fieldset {
+    border:none; /*Lachlan - Remove border outline from buttons, inputs and the like*/
+    border-radius: 10px; /* Lachlan - Make everything rounded*/
+    transition: background-color 250ms;/*Lachlan - Make any CSS change to background-colour fade transition in 250ms*/
+}
+
+input::placeholder                          {color:rgb(160,160,160);   } /*Lachlan - Change colour of placeholder text for input */
+a:visited                                   {color:#8583fa;            } /*Lachlan - Colour of link when it's been clicked before*/
+
+input,select,button                         {background-color: #4d5da5;} /*Lachlan - background colors of input and select*/
+input:hover,select:hover                    {background-color: #2b3871;} /*Lachlan - Set background of inputs to darker colour on hover*/
+
+legend                                      {font-size: larger;          } /*Lachlan - Make sure legend (The "title" of each formdiv is larger than interior text*/
+
+h1,h2,h3,input,legend,p, h4, label,li,a,textarea,button,select,span { /* Lachlan - Set font-family and color for almost all elements used*/
+    font-family: sans-serif;
+    color:antiquewhite;
+}
+
+textarea{ /*-Lachlan*/
+    background-color: rgb(16,16,16);
+    width: 100%; /*Lachlan - Make sure it fills the width*/
+    min-height: 100px; /*Lachlan - Min height 100px so it doesn't look awkward*/
+} 
+
+@keyframes site_content_fadein {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity:1;
+    }
 }
 
 /*=========================================================================*/
@@ -69,19 +74,26 @@ div, button, input, select, option,textarea, li, section, label,a, fieldset { /*
 .site_content_index_amazingquote{ /*Lachlan - For the centered quotes */
     text-align: center;
     color:whitesmoke;
+    animation: site_content_fadein forwards 2s;
 }
 .site_content_index_logo{ /*Lachlan - For logo image*/
     height: 80px;
     width: auto;
 }
-.site_content_index_details{
-    display: flex;
+.site_content_index_details{ /*Lachlan - For all the individual paragrapths */
+    display: flex; /*Lachlan - Space all the paragraphs evenly vertically*/
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-evenly; 
+    animation-name: site_content_fadein;
+    animation-duration: 5s;
 }
+
 /*=========================================================================*/
 /*apply.html*/
 /*=========================================================================*/
+.site_form_title {
+    animation: site_content_fadein forwards 5s;
+}
 .site_form_container { /*Lachlan - For the container that contains all the form submission things*/
     background-color: rgb(26, 26, 26);
     padding: 1%;
@@ -90,9 +102,24 @@ div, button, input, select, option,textarea, li, section, label,a, fieldset { /*
     flex-direction: column;
     justify-content: space-between;
 }
-.site_form_container_section{
+.site_form_container_section{ /*Lachlan - For the legends inside of a site_form_container*/
     background-color: #131313;
-
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.site_form_container_section > * {
+    animation: site_content_fadein forwards 6s;
+}
+.site_form_container_section legend {
+    float:left;
+    padding-bottom: 0.5%;
+    
+}
+.site_form_container_section input, .site_form_container_section select {
+    max-width: 25%;
+    
 }
 .site_form_submit_area { /*Lachlan - For the submit and reset buttons, makes sure they are spread evenly horizontally*/
     display:flex;
@@ -102,10 +129,10 @@ div, button, input, select, option,textarea, li, section, label,a, fieldset { /*
 .site_form_submit{ /*Lachlan - Size and colour for submit button on application form*/
     width:45%;
     height:40px;
-    background-color:rgb(144, 218, 101);
+    background-color:rgb(52, 143, 90);;
 }
 
-.site_form_submit:hover{ background-color: rgb(120, 180, 70); } /*Lachlan - hover colour for submit*/
+.site_form_submit:hover{ background-color: rgb(37, 104, 65); } /*Lachlan - hover colour for submit*/
 
 .site_form_reset{ /*Lachlan - Size and colour for reset button on application form*/
     width:45%;
@@ -113,7 +140,7 @@ div, button, input, select, option,textarea, li, section, label,a, fieldset { /*
     background-color: rgb(248, 131, 131);
 }
 
-.site_form_reset:hover{ background-color: rgb(200, 110 ,110); } /*Lachlan - hover colur for reset*/
+.site_form_reset:hover{ background-color: rgb(169, 76, 76); } /*Lachlan - hover colur for reset*/
 
 /*=========================================================================*/
 
