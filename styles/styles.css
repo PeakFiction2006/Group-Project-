@@ -22,7 +22,7 @@ body {
     border-radius: 0; /*Override the roundness attributes set below*/
 }
 
-div, button, input, select, option,textarea, li, section, label,a, fieldset {
+div, button, input, select, option,textarea, li, section, label,a, fieldset, table,th,td {
     border:none; /*Lachlan - Remove border outline from buttons, inputs and the like*/
     border-radius: 10px; /* Lachlan - Make everything rounded*/
     transition: background-color 250ms;/*Lachlan - Make any CSS change to background-colour fade transition in 250ms*/
@@ -36,7 +36,7 @@ input:hover,select:hover                    {background-color: #2b3871;} /*Lachl
 
 legend                                      {font-size: larger;          } /*Lachlan - Make sure legend (The "title" of each formdiv is larger than interior text*/
 
-h1,h2,h3,input,legend,p, h4, label,li,a,textarea,button,select,span { /* Lachlan - Set font-family and color for almost all elements used*/
+h1,h2,h3,input,legend,p, h4, label,li,a,textarea,button,select,span, table,th,td { /* Lachlan - Set font-family and color for almost all elements used*/
     font-family: sans-serif;
     color:antiquewhite;
 }
@@ -46,6 +46,9 @@ textarea{ /*-Lachlan*/
     width: 100%; /*Lachlan - Make sure it fills the width*/
     min-height: 100px; /*Lachlan - Min height 100px so it doesn't look awkward*/
 } 
+table {
+    background-color:rgb(16,16,16);
+}
 
 @keyframes site_content_fadein { /*Lachlan - Fade animation*/
     from{
