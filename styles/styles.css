@@ -76,10 +76,7 @@ textarea{ /*-Lachlan*/
     color:whitesmoke;
     animation: site_content_fadein forwards 2s; /*Lachlan - Fade it in 2 seconds*/
 }
-.site_content_index_logo{ /*Lachlan - For logo image*/
-    height: 80px;
-    width: auto;
-}
+
 .site_content_index_details{ /*Lachlan - For all the individual paragrapths */
     display: flex; /*Lachlan - Space all the paragraphs evenly vertically*/
     flex-direction: column;
@@ -108,7 +105,7 @@ textarea{ /*-Lachlan*/
     justify-content: space-between;
     margin-bottom: 15px;
 }
-.site_form_container_section > * {
+.site_form_container_section > * { /* Lachlan - Make all contents of the site_form_container_section classes use the fadein animation over 6 seconds*/
     animation: site_content_fadein forwards 6s;
 }
 .site_form_container_section legend { /*Lachlan*/
@@ -147,7 +144,7 @@ textarea{ /*-Lachlan*/
 /*=========================================================================*/
 .site_header_company_logo {height: 100%;} /*Lachlan - Make sure logo doesn't become larger 
 than header by setting it to, and thus restricting it to 100%*/
-.site_header_menu_image {height: 50%; width:auto; min-height: 10px; min-width: 10px;}
+.site_header_menu_image {height: 50%; width:auto; min-height: 10px; min-width: 10px;} /*Lachlan - For the menu button for the dropdown menu*/
 
 .site_header_item{ /*Lachlan - Just related to layout stuff*/
     height: 100%;
