@@ -1,3 +1,11 @@
+/*
+filename: styles.css
+author: Lachlan Phillips
+created: 21/3/2025
+last modified: 26/3/2025
+description: index.html,apply.html,about.html,jobs.html
+*/
+
 /*=========================================================================*/
 /*Core*/
 /*=========================================================================*/
@@ -15,14 +23,14 @@ body {
 /*Whole site*/
 /*=========================================================================*/
 .site_content{ /* Lachlan - Think of this as a custom body class for divs */
-    padding-left: 2%;
-    padding-right: 2%;
-    margin-bottom: 1.5%;
+    padding-left: 2%; /*Offset content of this div from the left side of page by 2% of it*/
+    padding-right: 2%; /*Offset content of this div from the right side of page by 2%*/
+    margin-bottom: 1.5%; /*Offset content from bottom*/
     flex-grow: 1; /*ensure it fills the site content area*/
     border-radius: 0; /*Override the roundness attributes set below*/
 }
 
-div, button, input, select, option,textarea, li, section, label,a, fieldset, table,th,td {
+div, button, input, select, option,textarea, li, section, label,a, fieldset, table,th,td, dl {
     border:none; /*Lachlan - Remove border outline from buttons, inputs and the like*/
     border-radius: 10px; /* Lachlan - Make everything rounded*/
     transition: background-color 250ms;/*Lachlan - Make any CSS change to background-colour fade transition in 250ms*/
@@ -36,7 +44,7 @@ input:hover,select:hover                    {background-color: #2b3871;} /*Lachl
 
 legend                                      {font-size: larger;          } /*Lachlan - Make sure legend (The "title" of each formdiv is larger than interior text*/
 
-h1,h2,h3,input,legend,p, h4, label,li,a,textarea,button,select,span, table,th,td { /* Lachlan - Set font-family and color for almost all elements used*/
+* { /* Lachlan - Set font-family and color for almost all elements used*/
     font-family: sans-serif;
     color:antiquewhite;
 }
@@ -46,7 +54,7 @@ textarea{ /*-Lachlan*/
     width: 100%; /*Lachlan - Make sure it fills the width*/
     min-height: 100px; /*Lachlan - Min height 100px so it doesn't look awkward*/
 } 
-table {
+table { /*Lachlan*/
     background-color:rgb(16,16,16);
 }
 
@@ -86,6 +94,35 @@ table {
     justify-content: space-evenly; 
     animation: site_content_fadein forwards 5s; /*Lachlan - Fade it in 5 seconds*/
 }
+/*=========================================================================*/
+/*about.html*/
+/*=========================================================================*/
+.about_section{ /*Foreach container in about*/
+    background-color: #2d2d2d;
+    padding-top:0%;
+    flex-direction: column;
+    display:flex;
+    justify-content: space-between;
+    padding-left: 1%;
+}
+.about_section h3 {
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+.about_section dl {
+    background-color: #444444;
+}
+.about_section table tr th {
+    background-color: #333333;
+}
+.about_section table tr td {
+    background-color: #1f1e1e;
+}
+dt {
+    font-weight: bold;
+}
+
+/*=========================================================================*/
 
 /*=========================================================================*/
 /*apply.html*/
