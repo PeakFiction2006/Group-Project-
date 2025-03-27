@@ -110,13 +110,13 @@ table { /*Lachlan*/
     margin-bottom: 0px;
 }
 .about_section dl {
-    background-color: #444444;
+    background-color: #454545;
 }
 .about_section table tr th {
-    background-color: #333333;
+    background-color: #2e2e2e;
 }
 .about_section table tr td {
-    background-color: #1f1e1e;
+    background-color: #1e1e1e;
 }
 dt {
     font-weight: bold;
@@ -171,7 +171,7 @@ dt {
 .site_form_reset{ /*Lachlan - Size and colour for reset button on application form*/
     width:45%;
     height:40px;
-    background-color: rgb(248, 131, 131);
+    background-color: rgb(255, 88, 88);
 }
 
 .site_form_reset:hover{ background-color: rgb(169, 76, 76); } /*Lachlan - hover colour for reset*/
