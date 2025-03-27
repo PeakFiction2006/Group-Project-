@@ -99,27 +99,39 @@ table { /*Lachlan*/
 /*=========================================================================*/
 .about_section{ /*Foreach container in about*/
     background-color: #2d2d2d;
-    padding-top:0%;
+    padding:1%;
     flex-direction: column;
     display:flex;
     justify-content: space-between;
-    padding-left: 1%;
 }
-.about_section h3 {
-    margin-top: 5px;
-    margin-bottom: 0px;
+.about_section section h3 {
+    margin-top: 0px;
+    margin-bottom: 5px;
 }
-.about_section dl {
+.about_section section {
+    background-color: #131313;
+    width:100%;
+    margin-bottom: 10px;
+    padding-left:1%;
+    padding-right:1%;
+    padding-bottom: 1%;
+    padding-top:5px;
+}
+.about_section section table dl {
     background-color: #454545;
 }
-.about_section table tr th {
+.about_section section table tr th {
     background-color: #2e2e2e;
 }
-.about_section table tr td {
+.about_section section table tr td {
     background-color: #1e1e1e;
+    padding-left: 10px;
 }
-dt {
+.about_section section table dt {
     font-weight: bold;
+}
+.about_section section table {
+    width:100%;
 }
 
 /*=========================================================================*/
