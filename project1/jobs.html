@@ -1,48 +1,101 @@
+<!-- Page placeholder/template by Lachlan, modified by Marcus -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COMPANY NAME - Jobs</title>
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="icon" href="../images/icon.png">
     <meta name="author" content="Matthew, Marcus and Lachlan ">
     <meta name="keywords" content="HTML, Javascript, IT, Website, Business, Programming, Code, Web Design">
-    <meta name="description" content="Innovative technology solutions! COMPANY NAME is at the forefront of IT.">
+    <meta name="description" content="Work under your corporate overlords in our currently open positions.">
+    <title>Careers at CORPORATION</title>
 </head>
+
 <body>
-    <div class="site_header"> <!--Lachlan - Top bar / "Header" of page-->
-        <div class="site_header_item"> <!--Lachlan - Clickable logo to redirect to index.html-->
-            <a href="index.html"><img src="../images/logo.png" class="site_header_company_logo" alt="The company logo"></a>
-        </div>
-        <div class="site_menu_dropdown"> <!--Dropdown menu template from https://www.w3schools.com/howto/howto_css_dropdown.asp-->
-            <button class="site_menu_dropdown_button"><img src="../images/menu.png" alt="Navigation Menu Icon" class="site_header_menu_image"></button>
-            <!--Menu image sourced from https://icons8.com/icons/set/menu-->
-            <div class="site_menu_dropdown_content"> <!--Drop down menu items to navigate site-->
-              <a href="index.html">Main</a>
-              <a href="about.html">About us</a>
-              <a href="jobs.html">Jobs</a>
-              <a href="apply.html">Apply</a>
-              <a href="mailto:info@companyname.com.au">E-Mail</a> <!--Direct user to company email-->
-            </div>
+
+
+<div class="site_header"> <!--Lachlan - Top bar / "Header" of page-->
+    <div class="site_header_item"> <!--Lachlan - Clickable logo to redirect to index.html-->
+        <a href="index.html"><img src="../images/logo.png" class="site_header_company_logo" alt="The company logo"></a>
+    </div>
+    <div class="site_menu_dropdown"> <!--Dropdown menu template from https://www.w3schools.com/howto/howto_css_dropdown.asp-->
+        <button class="site_menu_dropdown_button"><img src="../images/menu.png" alt="Navigation Menu Icon" class="site_header_menu_image"></button>
+        <div class="site_menu_dropdown_content"> <!--Drop down menu items to navigate site-->
+          <a href="index.html">Main</a>
+          <a href="about.html">About us</a>
+          <a href="jobs.html">Jobs</a>
+          <a href="apply.html">Apply</a>
+          <a href="mailto:info@companyname.com.au">E-Mail</a> <!--Direct user to company email-->
         </div>
     </div>
+</div>
 
-    <!--Put all of the webpage content inside this div-->
-    <div class="site_content">
-        <h1>Jobs (Placeholder feel free to remove)</h1>
-        <p>test</p>
+<!--Put all of the webpage content inside this div-->
+<!-- Note that semantic tags will replace div tags in the future - MA -->
+<div class="site_content">
+    <h1>Careers at CORPORATION</h1>
+    <p>We are currently looking to expand CORPORATION. Positions that are currently open are listed below.</p>
+    <h6><em>Work under your corporate overlords in our currently open positions.</em></h6>
+    <br><br>
+
+    <fieldset> <!-- Fieldset matches colour with background - check in on this  -->
+        <legend><h2>Open Positions at CORPORATION</h2></legend>
+        <ol> <!-- Ordered List for open positions/jobs -->
+            
+            <li><h3>Network Administrator</h3></li> 
+            <ul>
+                <li>[Reference number]</li>
+                <li>Salary: $85,00 - $105,000 AUD (<a href="https://www.seek.com.au/career-advice/role/network-administrator/salary" target="_blank">source</a>)</li>
+                <li><h4>Key Network Administrator Skills</h4>
+                    <ul>
+                        <li>Knowledge of different types of networks: Network types include Local Area Networks (LANs), Wide Area Networks (WANs), Virtual Private Networks (VPNs), and sometimes Storage Area Networks (SANs). 
+                            Though some jobs may require more experience in one over another, having a basic understanding of the various network types and how to configure them will be crucial to your network administrator skill set.</li>
+                        <li>Understanding of network security components: These include firewalls, VPNs, and access control. 
+                            Knowing about common cyber attacks and the appropriate response to them is critical for a network administrator.</li>
+                        <li>Familiarity with servers: Upgrading and configuring servers is a sought-after skill for network administrators. These may include Windows and Linux operating systems.</li>
+                        <li>Communication and teamwork: As a network administrator, you'll likely work on a team or with other organization members to ensure computers and systems are running smoothly. 
+                            Being able to communicate problems and solutions with other people is a valuable skill to have.</li>
+                        <li>[Placeholder taken from <a href="https://www.coursera.org/articles/what-is-a-network-administrator-a-career-guide" target="_blank">source</a>]</li></li>
+                    </ul>
+                <li>[</li>   
+            </ul> 
+            <br><br><br>
+
+
+
+            <li><h3>Systems Engineer [Placeholder]</h3></li> 
+            <ul>
+                <li>[Reference number]</li>
+                <li>Salary: $100,000 - $130,000 AUD (<a href="https://www.randstad.com.au/job-profiles/systems-engineer/" target="_blank">source</a>)</li>
+                <li>A systems engineer is a professional who applies engineering principles to develop and maintain efficient systems. 
+                    They play a crucial role in various industries by solving problems in systems. 
+                    Unlike other engineers who solve issues in independent parts, a systems engineer takes a holistic approach by studying the interconnections of systems. 
+                    When a systems engineer develops a system, they ensure it provides a positive user experience while considering the company objectives and operations.
+                    [Placeholder taken from <a href="https://www.randstad.com.au/job-profiles/systems-engineer/" target="_blank">source</a>]</li>
+                <li>[</li>     
+        </ol>
+
+    </fieldset>
+
+
+
+</div>
+
+
+
+
+<footer> <!--Lachlan - Footer of website-->
+    <div class="site_footer"> <!--Custom class for layout-->
+        <span> <!--Jira Project Link-->
+            <a href="">TODO: JIRA PROJECT LINK</a>
+        </span> <!--Fake Copyright for asthetics-->
+        <span class="site_footer_copyright">
+            (Not) @ 2025 Copyright CompanyName | All rights reserved.
+        </span>
     </div>
+</footer>
 
-    <footer> <!--Lachlan - Footer of website-->
-        <div class="site_footer"> <!--Custom class for layout-->
-            <span> <!--Jira Project Link-->
-                <a href="">TODO: JIRA PROJECT LINK</a>
-            </span> <!--Fake Copyright for asthetics-->
-            <span class="site_footer_copyright">
-                (Not) @ 2025 Copyright CompanyName | All rights reserved.
-            </span>
-        </div>
-    </footer>
 </body>
 </html>
+
