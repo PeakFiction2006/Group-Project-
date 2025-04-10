@@ -1,0 +1,23 @@
+/*
+filename: packagestyles.css
+author: Matthew Tzu Feng Yeo
+created: 10/4/2025
+last modified: 10/4/2025
+description: package.html
+*/
+
+.pacakge {
+background-color: grey;
+border-radius: 1rem;
+padding: 1.5rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.space{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+}
