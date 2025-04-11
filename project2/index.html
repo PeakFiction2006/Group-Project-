@@ -16,6 +16,9 @@
     h3{text-align: left}
     h1{text-align: left}
     img {border-radius: 50%}
+    .superheader{
+        font-size: 60px;
+    }
     .logo, .systempic{
         display:flex;
         justify-content:right;
@@ -30,7 +33,7 @@
         float:right;
         padding: 20px
     }
-    .About{
+    .banner{
         background-color: #136abe;
         width: 1200px;
         margin: 40px;
@@ -46,10 +49,47 @@
     float:left;
     padding: 20px
 }
-.system{
-    font-size: 50px;
+.header{
+    font-size: 55px;
     text-align: center;
 }
+.Footer{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(25, 25, 25);
+    display:flex;
+    justify-content: space-between; /*Spread contents evenly around*/
+    align-items: center;
+}
+.background{
+    padding-left: 2%;
+    padding-right: 2%;
+    background-image: url("stock_computer_2.png"); /*set background picture to this*/
+    background-repeat: repeat-x;
+    background-size: cover; /*Cover avaiable area with it*/ /*Matthew: I set to auto cause it conflicts with repeat*/
+    flex-grow: 1;
+    border-radius: 0;
+}
+/*copy addition start*/.button{
+    background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+
+  position: center;
+}
+.wrapper{
+    text-align: center;
+}
+.button {width: 30%;}
+/*copy addition end*/
+
 </style>
 <body>
     <div class="site_header"> <!--Lachlan - Top bar / "Header" of page-->
@@ -71,13 +111,15 @@
     </div>
 
     <!--Put all of the webpage content inside this div-->
-    <div class="site_content, site_content_index_background">
+    <!--<div class="site_content, site_content_index_background">-->
+    <div class="background">
         <br><br><br><br><br>
         <div class="container">
             <div class="logotext">
-                <h1>Welcome to Victoria Digital Security Services</h1>
+                <h1 class="superheader">Welcome to Victoria Digital Security Services</h1>
                 <h3>Providing protections of your data 
-                    in every way, shape, and form.</h3> 
+                    in every way, shape, and form.</h3>
+                <h3>Above and Beyond the Lock.</h3>
                 </div>
             <div class="logo"><img src="logo.webp" style="width:500px ;height:500px"></div>
         </div>
@@ -87,8 +129,8 @@
 
     <!--<div class="site_content_index_details"> <!-Lachlan - Random company details, at this stage a placeholder-->
     <div>
-        <div class="About">
-            <h1>About Us</h1>
+        <div class="banner">
+            <h1 class="header">About Us</h1>
             <section>
                 <h4>
                 We are company based from Melbourne Australia in the state of Victoria. 
@@ -132,7 +174,7 @@
 
 <div class="container">
     <div class="systemtext">
-            <h1 class="system">Our System</h1>
+            <h1 class="header">Our System</h1>
             <h2>&#127760; Digital Protections</h2>
             Hackers most often exploit a security breach in your systems to get an opening into your most sensitive of data.
             To prevent this we first start out with a digital sweep of your current systems to analyse any potential or current
@@ -165,21 +207,31 @@
            tests and submit an extensive report on areas of improvement. If the company structure requires the cycling 
            of old to new workers, we offer monthly training services to ensure the most complete data security from your workers.
        </div>
-       <div class="systempic"><img src="oursystem.jpg" style="width:400px ;height:400px"></div>
-</div>
-            </div>
-        </div>
+       <div class="systempic"><img src="oursystem.jpg" style="width:500px ;height:500px"></div>
     </div>
-    <br><br><br><br><br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br><br><br><br><br>  <br><br><br><br><br><br><br><br><br><br><br><br>  <br><br><br><br><br><br>    
+</div>
+        
+    <br><br><br><br><br><br><br><br><br><br><br><br> 
 
-
+<div class="container">
+    <div class="WorkingForUs banner">
+        <h1 class="header">Working For Victoria Digital Security</h1>
+        Lately we have been taking on more and more clients. To manage and service all of them to a satisfactory level
+        of quality we need many dedicated graduates who have studies in IT. The job is a regular 9 to 5 no more and no less
+        than what is expected. Overtime payment is only after company request. Irregardless of experience, so long as you have 
+        an education background in IT then we can train you to do the job under a paid probation period. <br><br>
+        <a href="jobs.html"><button class="button wrapper">Open Positions</button></a>
+    </div>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 
 
 
     <footer> <!--Lachlan - Footer of website-->
-        <div class="site_footer"> <!--Custom class for layout-->
+        <!--<div class="site_footer"> Custom class for layout-->
+        <div class="Footer">
             <span> <!--Jira Project Link-->
                 <a href="">TODO: JIRA PROJECT LINK</a>
             </span> <!--Fake Copyright for asthetics-->
