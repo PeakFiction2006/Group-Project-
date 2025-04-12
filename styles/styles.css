@@ -160,7 +160,7 @@ table { /*Lachlan*/
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-image: url("images/Us.jpg");
+    background-image: url("images/us.jpg");
 }
 #about_section_container { /*Lachlan - The container of all person sections*/
     display:flex;
