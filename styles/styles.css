@@ -2,7 +2,7 @@
 filename: styles.css
 author: Lachlan Phillips
 created: 21/3/2025
-last modified: 26/3/2025
+last modified: 12/4/2025
 description: index.html,apply.html,about.html,jobs.html
 */
 
@@ -13,7 +13,8 @@ html{height:100%} /* Lachlan - Ensuring height is set to 100% of page, Related t
 
 body { 
     background-color:rgb(19, 19, 19);/* Lachlan - Set background colour to near black*/
-    margin:0; /*Lachlan - Set margin to zero so header/footer can fill page*/
+    margin:0%; /*Lachlan - Set margin to zero so header/footer can fill page*/
+    padding:0%;
     display:flex;
     flex-direction: column; /*Lachlan - Ensure flow of elements is vertical overall*/
     height: 100%; /* Lachlan - Ensuring height is set to 100% of page, Related to ensuring that divs can fill page*/
@@ -30,7 +31,7 @@ body {
     border-radius: 0; /*Override the roundness attributes set below*/
 }
 
-div, button, input, select, option,textarea, li, section, label,a, fieldset, table,th,td, dl {
+div, button, input, select, option,textarea, li, section, label,a, fieldset, table,th,td, dl,h2 {
     border:none; /*Lachlan - Remove border outline from buttons, inputs and the like*/
     border-radius: 10px; /* Lachlan - Make everything rounded*/
     transition: background-color 250ms;/*Lachlan - Make any CSS change to background-colour fade transition in 250ms*/
@@ -74,75 +75,104 @@ table { /*Lachlan*/
 /*index.html*/
 /*=========================================================================*/
 .site_content_index_background{ /* Lachlan - (Version for index.html with background) Think of this as a custom body class for divs */
-    padding-left: 2%;
-    padding-right: 2%;
-    background-image: url("images/stock_computer_2.png"); /*set background picture to this*/
+
+    background-image: url("images/stock_computer.png"); /*set background picture to https://unsplash.com/photos/macbook-pro-on-white-surface-WiONHd_zYI4*/
     background-size: cover; /*Cover avaiable area with it*/
-    flex-grow: 1;
-    border-radius: 0;
+    background-attachment: fixed;
 }
 
 .site_content_index_amazingquote{ /*Lachlan - For the centered quotes */
     text-align: center;
     color:whitesmoke;
     animation: site_content_fadein forwards 2s; /*Lachlan - Fade it in 2 seconds*/
+    margin-bottom: 0;
 }
 
 .site_content_index_details{ /*Lachlan - For all the individual paragrapths */
     display: flex; /*Lachlan - Space all the paragraphs evenly vertically*/
     flex-direction: column;
     justify-content: space-evenly; 
-    animation: site_content_fadein forwards 5s; /*Lachlan - Fade it in 5 seconds*/
-}
-.site_content_index_details{ /*Lachlan - For all the individual paragrapths */
-    display: flex; /*Lachlan - Space all the paragraphs evenly vertically*/
-    flex-direction: column;
-    justify-content: space-evenly;
-    animation: site_content_fadein forwards 5s; /*Lachlan - Fade it in 5 seconds*/
+    width:100%;
+    margin:0%;
 }
 .site_content_index_details div { /*Lachlan - For each block of information in page*/
-    width:95%;
-    background-color: #131313;
-    margin-bottom: 50px;
-    padding-left: 10px;
+    width:100%;
+    padding-top: 0%;
+    border-radius: 0px;
+}
+.site_content_index_details div:nth-child(3)
+{
+    background-image: url("images/stock_keyboard.png"); /*https://unsplash.com/photos/closeup-photo-of-computer-keyboard-WkfDrhxDMC8*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-y: center;
 }
 .site_content_index_details div section { /*Lachlan - For each subsection of the above*/
-    width:95%;
+    width: 95%;
     background-color: #333333;
     margin-bottom: 20px;
-    padding-left: 10px;
-
+    padding: 0.5%;
+    margin:auto;
+    margin-bottom: 10px;
+    animation: site_content_fadein forwards 4s; /*Lachlan - Fade it in 5 seconds*/
 }
-.site_content_index_details{ /*Lachlan - For all the individual paragrapths */
-    display: flex; /*Lachlan - Space all the paragraphs evenly vertically*/
-    flex-direction: column;
-    justify-content: space-evenly;
-    animation: site_content_fadein forwards 5s; /*Lachlan - Fade it in 5 seconds*/
-}
-.site_content_index_details div { /*Lachlan - For each block of information in page*/
-    width:95%;
+.site_content_index_details h2{
+    display:block;
+    width:100%;
     background-color: #131313;
-    margin-bottom: 50px;
-    padding-left: 10px;
+    text-align: center;
+    margin-top: 0%;
+    border-radius: 0px;
 }
-.site_content_index_details div section { /*Lachlan - For each subsection of the above*/
-    width:95%;
-    background-color: #333333;
-    margin-bottom: 20px;
-    padding-left: 10px;
-
+.site_content_index_details div section h4,p,ol {
+    margin-top:0px;
+    margin-bottom: 3px;
 }
 /*=========================================================================*/
 /*about.html*/
 /*=========================================================================*/
-.about_section{ /*Foreach container in about*/
-    background-color: #2d2d2d;
-    padding:1%;
+#aboutus_group_photo{
+    width:100%;
+    text-align: center;
+    animation: site_content_fadein forwards 6s; /*Lachlan - Fade it in 2 seconds*/
+}
+#aboutus_group_photo figure img {
+    width:80%;
+    height:auto;
+
+    min-width: 100px;
+    min-height: 200px;
+
+    max-width: 700px;
+    max-height: 400px;
+    border-radius: 50px;
+}
+.about_section{ /*Lachlan-  For each container about a person in the about page*/
+    padding-right: 40px;
+    padding-left: 20px;
+    padding-top: 20px;
+    margin-bottom: 40px;
     flex-direction: column;
     display:flex;
     justify-content: space-between;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url("images/us.jpg");
 }
-.about_section section h3 {
+#about_section_container { /*Lachlan - The container of all person sections*/
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #131313;
+}
+#about_section_container * *, #about_section_container h2{ /*All of the items and h2s in about section container*/
+    animation: site_content_fadein forwards 6s; /*Lachlan - Fade it in 2 seconds*/
+
+}
+
+.about_section section h3 { /*Lachlan - To stop unnessecary gaps between heading and paragraphs*/
     margin-top: 0px;
     margin-bottom: 5px;
 }
@@ -150,9 +180,7 @@ table { /*Lachlan*/
     background-color: #131313;
     width:100%;
     margin-bottom: 10px;
-    padding-left:1%;
-    padding-right:1%;
-    padding-bottom: 1%;
+    padding:1%;
     padding-top:5px;
 }
 .about_section section table dl {
@@ -241,12 +269,37 @@ than header by setting it to, and thus restricting it to 100%*/
     align-content: center;
 }
 
-.site_header{ /*Lachlan - actual class for the header at the top of the page */
+.site_header_navbuttons{ /*Lachlan - Just related to layout stuff*/
+    height: 100%;
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.site_header_navbuttons a  { /*For each button of the the nav buttons section that appears when the page is large enough*/
+    display:block;
+    align-content: center;
+    background-color: #323232;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-decoration: none;
+    color: aliceblue;
+}
+.site_header_navbuttons a:hover {
+    background-color: #232323;
+}
+/*Lachlan, conditional based on screen width from stackoverflow answer
+https://stackoverflow.com/questions/18776322/can-i-hide-the-element-if-it-doesnt-fit-the-available-width-using-css-only*/
+@media screen and (max-width:890px){
+    .site_header_navbuttons{display:none;}
+}
+#site_header{ /*Lachlan - actual class for the header at the top of the page */
     /*Not to be confused with HTML Header tags for metadata, this is for the topbar*/
     background-color: rgba(25,25,25);/* rgb(32, 42, 179);*/
     display: flex;
     flex-direction: row;
-    height:50px;
     height:50px;
     width:100%;
 }
@@ -254,16 +307,11 @@ than header by setting it to, and thus restricting it to 100%*/
 .site_footer{ /*Lachlan - Custom Footer class for a div that goes inside <footer> tag */
     width: 100%;
     height: 40px;
-    height: 40px;
     background-color: rgb(25, 25, 25);
     display:flex;
     justify-content: space-between; /*Spread contents evenly around*/
     align-items: center;
 }
-.site_footer p { /* text inside footer*/    
-    height:fit-content;
-}
-
 .site_footer p { /* text inside footer*/    
     height:fit-content;
 }
@@ -288,7 +336,7 @@ than header by setting it to, and thus restricting it to 100%*/
     border: none;
     width:100%;
     height:100%;
-    min-width: 80px;
+    min-width: 87px;
 }
 
 /* Dropdown Content (Hidden by Default) */
