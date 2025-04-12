@@ -1,8 +1,10 @@
 https://peakfiction2006.github.io/Group-Project-/project1
-## Todo
-+ Needs to be deployed as a static webpage via github (Only repository owner can do this)
 
 ## Image sources
+
+menu icon https://icons8.com/icons/set/menu
+
+placeholder company logo https://www.freeimages.com/vector/generic-logo-4846322
 
 stock_keyboard.png https://unsplash.com/photos/closeup-photo-of-computer-keyboard-WkfDrhxDMC8*/
 

@@ -124,6 +124,7 @@ table { /*Lachlan*/
     text-align: center;
     margin-top: 0%;
     border-radius: 0px;
+    animation: site_content_fadein forwards 3s; 
 }
 .site_content_index_details div section h4,p,ol {
     margin-top:0px;
