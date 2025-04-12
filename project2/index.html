@@ -64,7 +64,7 @@
 .background{
     padding-left: 2%;
     padding-right: 2%;
-    background-image: url("stock_computer_2.png"); /*set background picture to this*/
+    background-image: url("images/stock_computer_2.png"); /*set background picture to this*/
     background-repeat: repeat-x;
     background-size: cover; /*Cover avaiable area with it*/ /*Matthew: I set to auto cause it conflicts with repeat*/
     flex-grow: 1;
@@ -119,26 +119,56 @@
 .column{
     font-size: 12px
 }
+.qline{
+    height:100px;
+    border-left: 7px solid red;
+    border-radius: 0;
+    padding: 25px;
+    
+}
+.aline{
+    height:100px;
+    border-left: 7px solid green;
+    border-radius: 0;
+    padding: 25px;
+}
+.Q{
+    font-size: 70px;
+    color: red
+}
+.A{
+    font-size: 70px;
+    color: green
+}
 </style>
 <body>
-    <div class="site_header"> <!--Lachlan - Top bar / "Header" of page-->
+    <div id="site_header"> <!--Lachlan - Top bar / "Header" of page-->
         <div class="site_header_item"> <!--Lachlan - Clickable logo to redirect to index.html-->
-            <a href="index.html"><img src="logo.png" class="site_header_company_logo" alt="The company logo"></a>
+            <!--Logo source https://www.freeimages.com/vector/generic-logo-4846322-->
+            <a href="index.html"><img src="images/logo.png" class="site_header_company_logo" alt="The company logo"></a> 
+        </div>
+        <div class="site_header_navbuttons"> <!--Lachlan - Buttons that show if the screen is large enough-->
+            <a href="index.html">Main</a>
+            <a href="about.html">About us</a>
+            <a href="jobs.html">Jobs</a>
+            <a href="apply.html">Apply</a>
+            <a href="package.html">Packages</a>
+            <a href="mailto:info@companyname.com.au">E-Mail</a> <!--Direct user to company email-->
         </div>
         <div class="site_menu_dropdown"> <!--Dropdown menu template from https://www.w3schools.com/howto/howto_css_dropdown.asp-->
-            <button class="site_menu_dropdown_button"><img src="menu.png" alt="Navigation Menu Icon" class="site_header_menu_image"></button>
+            <button class="site_menu_dropdown_button"><img src="images/menu.png" alt="Navigation Menu Icon" class="site_header_menu_image"></button>
             <!--Menu image sourced from https://icons8.com/icons/set/menu-->
             <div class="site_menu_dropdown_content"> <!--Drop down menu items to navigate site-->
               <a href="index.html">Main</a>
               <a href="about.html">About us</a>
               <a href="jobs.html">Jobs</a>
               <a href="apply.html">Apply</a>
-              <a href="package.html">Purchase</a>
+              <a href="package.html">Packages</a>
               <a href="mailto:info@companyname.com.au">E-Mail</a> <!--Direct user to company email-->
             </div>
         </div>
     </div>
-
+    
     <!--Put all of the webpage content inside this div-->
     <!--<div class="site_content, site_content_index_background">-->
     <div class="background">
@@ -150,7 +180,7 @@
                     in every way, shape, and form.</h3>
                 <h3>Above and Beyond the Lock.</h3>
                 </div>
-            <div class="logo"><img src="logo.webp" style="width:500px ;height:500px" class="imground"></div>
+            <div class="logo"><img src="images/logo.webp" style="width:500px ;height:500px" class="imground"></div>
         </div>
         <br><br><br><br><br><br><br><br><br>
 
@@ -176,15 +206,15 @@
 
 <div class="superheader">Our Industry Awards</div>
 <div class="awardpic_row">
-  <div class="awardpic_column"><img src="cyber1.jpg" style="width:200px ;height:200px"></div>
+  <div class="awardpic_column"><img src="images/cyber1.jpg" style="width:200px ;height:200px"></div>
   
-  <div class="awardpic_column"><img src="cyber2.jpeg"style="width:200px ;height:200px"></div>
+  <div class="awardpic_column"><img src="images/cyber2.jpeg"style="width:200px ;height:200px"></div>
   
-  <div class="awardpic_column"><img src="cyber3.jpg" style="width:200px ;height:200px"></div>
+  <div class="awardpic_column"><img src="images/cyber3.jpg" style="width:200px ;height:200px"></div>
   
-  <div class="awardpic_column"><img src="cyber4.png" style="width:200px ;height:200px"></div>
+  <div class="awardpic_column"><img src="images/cyber4.png" style="width:200px ;height:200px"></div>
   
-  <div class="awardpic_column"><img src="cyber5.webp"style="width:200px ;height:200px"></div>
+  <div class="awardpic_column"><img src="images/cyber5.webp"style="width:200px ;height:200px"></div>
   <figcaption class="column">
     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
     Globee Cybersecurity Award &nbsp; 
@@ -202,7 +232,7 @@
 
 <h1 class="superheader">What the Company Strives For</h1>
 <div class="container">
-  <div class="visionpic"><img src="vision.webp" style="width:400px ;height:400px" class="imground"></div>
+  <div class="visionpic"><img src="images/vision.webp" style="width:400px ;height:400px" class="imground"></div>
   <div class="visiontext">
     <h1>The Mission</h1>
      To provide clients with wholistic protections for their company trade secrets.
@@ -261,7 +291,7 @@
            tests and submit an extensive report on areas of improvement. If the company structure requires the cycling 
            of old to new workers, we offer monthly training services to ensure the most complete data security from your workers.
        </div>
-       <div class="systempic"><img src="oursystem.jpg" style="width:500px ;height:500px" class="imground"></div>
+       <div class="systempic"><img src="images/oursystem.jpg" style="width:500px ;height:500px" class="imground"></div>
     </div>
 </div>
 <br><br><br><br><br><br><br>
@@ -307,8 +337,15 @@
     <h1 class="jobs">AI/ML Engineer</h1><button class="button pbutton">No position</button>
 </div>
 <br><br><br><br><br><br><br>
-    
 
+<h1 class="superheader">Frequently Asked Questions (FAQ)</h1>
+<div class="qline"><div class="Q">Q</div></div>
+<div class="aline"><div class="A">A</div></div>
+<div class="qline"><div class="Q">Q</div></div>
+<div class="aline"><div class="A">A</div></div><br>
+<div class="qline"><div class="Q">Q</div></div>
+<div class="aline"><div class="A">A</div></div><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     
     
     
