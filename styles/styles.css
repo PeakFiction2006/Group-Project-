@@ -432,7 +432,7 @@ display: block;
 
 
 
-/*For index.html and about.html specifically, writtern by Matthew, edited by Lachlan */
+/*For index.html specifically, writtern by Matthew, edited by Lachlan */
 h3{text-align: left}
 h1{text-align: left}
 .imground {border-radius: 50%}
@@ -594,3 +594,27 @@ padding: 20px;
     margin-left:20px;
 }
 /*=========================================================================*/
+/*For about.html specifically, writtern by Matthew, edited by Lachlan */
+.headshot{
+    height: 300px;
+    width:300px;
+    border: 5px solid purple;
+
+    margin-left:800px;
+}
+.id{
+    margin-left:800px;
+}
+.details{
+    position: relative;
+    left:800px;
+    padding: 5px;
+}
+.bio{
+    position: relative;
+    bottom: 600px;
+
+}
+.abouttable{
+    text-align: center;
+}
