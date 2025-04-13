@@ -14,3 +14,8 @@ stock_keyboard_2.png https://unsplash.com/photos/focus-photography-of-computer-k
 stock_computer_4.png https://unsplash.com/photos/gray-and-black-laptop-computer-on-surface-Im7lZjxeLhg
 
 stock_computer.png https://unsplash.com/photos/macbook-pro-on-white-surface-WiONHd_zYI4
+
+## Code Sources
+
+Dropdown menu for page header originally sourced from
+https://www.w3schools.com/howto/howto_css_dropdown.asp

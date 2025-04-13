@@ -276,16 +276,18 @@ than header by setting it to, and thus restricting it to 100%*/
     flex-direction: row;
     width:100%;
     justify-content: space-between;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-top: 0.35%;
 }
 .site_header_navbuttons a  { /*For each button of the the nav buttons section that appears when the page is large enough*/
-    display:block;
     align-content: center;
     background-color: #323232;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 4.5%;
+    padding-right: 4.5%;
     text-decoration: none;
+    height: 80%;
+    vertical-align: middle;
     color: aliceblue;
 }
 .site_header_navbuttons a:hover {
@@ -293,7 +295,7 @@ than header by setting it to, and thus restricting it to 100%*/
 }
 /*Lachlan, conditional based on screen width from stackoverflow answer
 https://stackoverflow.com/questions/18776322/can-i-hide-the-element-if-it-doesnt-fit-the-available-width-using-css-only*/
-@media screen and (max-width:890px){
+@media screen and (max-width:1000px){
     .site_header_navbuttons{display:none;}
 }
 #site_header{ /*Lachlan - actual class for the header at the top of the page */
@@ -307,14 +309,48 @@ https://stackoverflow.com/questions/18776322/can-i-hide-the-element-if-it-doesnt
 
 .site_footer{ /*Lachlan - Custom Footer class for a div that goes inside <footer> tag */
     width: 100%;
-    height: 40px;
-    background-color: rgb(25, 25, 25);
+    background-color: rgb(15, 15, 15);
     display:flex;
+    flex-direction: column;
     justify-content: space-between; /*Spread contents evenly around*/
-    align-items: center;
-}
-.site_footer p { /* text inside footer*/    
     height:fit-content;
+    /*border-top-style:inset;
+    border-radius: 0;
+    border-top-width: 10px;
+    border-top-color: #000000;*/
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.site_footer div 
+{
+
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:100%;
+    /*border-bottom-style:outset;
+    border-radius: 0;
+    border-bottom-width: 5px;
+    border-bottom-color: #000000;*/
+}
+.site_footer div section {
+    margin-bottom: 50px;
+    display:flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left:2%;
+    margin-right: 2%;
+    margin-bottom: 10px;
+    width:100%;
+}
+.site_footer div section a {
+    margin-bottom: 8px;
+    text-decoration: none;
+    color:#8583fa
+}
+.site_footer div section h3{
+    margin-top: 2%;
+    margin-bottom: 1%;
 }
 
 /*=========================================================================*/
