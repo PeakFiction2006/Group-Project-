@@ -1,6 +1,6 @@
 /*
 filename: styles.css
-author: Lachlan Phillips, Marcus Au
+author: Lachlan Phillips, Marcus Au (Changes done by Marcus are located at the botton after seperater)
 created: 21/3/2025
 last modified: 13/4/2025
 description: testing for jobs.html
@@ -403,3 +403,13 @@ display: block;
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .site_menu_dropdown:hover .site_menu_dropdown_button {background-color: #8583fa;}
 /*=========================================================================*/
+
+/*====== CODE BEYOND THIS LINE WAS DONE BY MARCUS AU FOR TESTING ======*/
+
+#notesdisclaimers{
+    border: solid white;
+    width: 30%;
+    float: right;
+    margin: 1em;
+    padding: 1em;
+}
