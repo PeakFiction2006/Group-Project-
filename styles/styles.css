@@ -26,7 +26,7 @@ body {
 .site_content{ /* Lachlan - Think of this as a custom body class for divs */
     padding-left: 2%; /*Offset content of this div from the left side of page by 2% of it*/
     padding-right: 2%; /*Offset content of this div from the right side of page by 2%*/
-    margin-bottom: 1.5%; /*Offset content from bottom*/
+    padding-bottom: 0.5%; /*Offset content from bottom*/
     flex-grow: 1; /*ensure it fills the site content area*/
     border-radius: 0; /*Override the roundness attributes set below*/
 }
@@ -131,12 +131,27 @@ table { /*Lachlan*/
     margin-bottom: 3px;
 }
 /*=========================================================================*/
+/*jobs.html*/
+/*=========================================================================*/
+.jobs_background {
+    background-image: url("images/stock_keyboard_2.png"); /*https://unsplash.com/photos/focus-photography-of-computer-keyboard-with-red-lights-feXpdV001o4*/
+    background-size: cover;
+    background-attachment: fixed;
+}
+.jobs_background div, .jobs_background aside{
+    background-color: #131313;
+    padding: 1%;
+}
+/*=========================================================================*/
+
+
+/*=========================================================================*/
 /*about.html*/
 /*=========================================================================*/
 #aboutus_group_photo{
     width:100%;
     text-align: center;
-    animation: site_content_fadein forwards 6s; /*Lachlan - Fade it in 2 seconds*/
+    /*animation: site_content_fadein forwards 6s; /*Lachlan - Fade it in 2 seconds*/
 }
 #aboutus_group_photo figure img {
     width:80%;
@@ -166,7 +181,7 @@ table { /*Lachlan*/
     display:flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #131313;
+    /*background-color: #131313;*/
 }
 #about_section_container * *, #about_section_container h2{ /*All of the items and h2s in about section container*/
     animation: site_content_fadein forwards 6s; /*Lachlan - Fade it in 2 seconds*/
@@ -200,6 +215,11 @@ table { /*Lachlan*/
 .about_section section table {
     width:100%;
 }
+.about_background {
+    background-image: url("images/stock_keyboard_2.png"); /* https://unsplash.com/photos/focus-photography-of-computer-keyboard-with-red-lights-feXpdV001o4*/
+    background-size: cover;
+    background-attachment: fixed;
+}
 
 /*=========================================================================*/
 
@@ -208,6 +228,11 @@ table { /*Lachlan*/
 /*=========================================================================*/
 .site_form_title {
     animation: site_content_fadein forwards 5s;
+}
+.site_form_background {
+    background-image: url("images/stock_keyboard.png"); /*https://unsplash.com/photos/closeup-photo-of-computer-keyboard-WkfDrhxDMC8*/
+    background-size: cover;
+    background-attachment: fixed;
 }
 .site_form_container { /*Lachlan - For the container that contains all the form submission things*/
     background-color: rgb(26, 26, 26);
