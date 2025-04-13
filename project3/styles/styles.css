@@ -436,6 +436,7 @@ solid white border
 
 #positions{
     float:left;
+    padding: 1em;
 }
 
 .jobs_site_content > * { /* Lachlan - Make all contents of the site_form_container_section classes use the fadein animation over 6 seconds*/
