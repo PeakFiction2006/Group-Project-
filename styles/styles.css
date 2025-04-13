@@ -172,10 +172,11 @@ table { /*Lachlan*/
     flex-direction: column;
     display:flex;
     justify-content: space-between;
-    background-repeat: no-repeat;
+    /*background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-image: url("images/us.jpg");
+    background-image: url("images/us.jpg");*/
+    background-color: #1e1e1e;
 }
 #about_section_container { /*Lachlan - The container of all person sections*/
     display:flex;
