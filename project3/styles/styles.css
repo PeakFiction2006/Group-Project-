@@ -415,6 +415,7 @@ solid white border
 1em of padding, or rounded corners */
 #notesdisclaimers{
     border: solid white;
+    background-color: #1E1D1D;
     width: 46%;
     float: right;
     margin: 1em;
@@ -428,6 +429,7 @@ solid white border
 1em of padding, or rounded corners */
 #benefits{
     border: solid white;
+    background-color: #1E1D1D;
     width: 46%;
     float:left;
     margin: 1em;
@@ -436,7 +438,18 @@ solid white border
 
 #positions{
     float:left;
-    padding: 1em;
+ 
+    
+}
+
+#network_admin{
+    border: solid white;
+    padding: 2em;
+}
+
+#systems_engineer{
+    border: solid white;
+    padding: 2em
 }
 
 .jobs_site_content > * { /* Lachlan - Make all contents of the site_form_container_section classes use the fadein animation over 6 seconds*/
@@ -450,3 +463,5 @@ solid white border
     background-attachment: fixed;
     background-position-y: center;
 }
+
+
