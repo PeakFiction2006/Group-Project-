@@ -513,25 +513,58 @@ display: table;
 .column{
 font-size: 12px
 }
+
 .qline{
 height:100px;
 border-left: 7px solid red;
 border-radius: 0;
 padding: 25px;
 
+align-items:center;
+margin-bottom: 20px;
+display: flex
 }
+
 .aline{
 height:100px;
-border-left: 7px solid green;
+border-left: 7px solid grey;
 border-radius: 0;
 padding: 25px;
+
+align-items:center;
+margin-bottom: 20px;
+display: flex
 }
 .Q{
 font-size: 70px;
-color: red
+color: red;
+
+border: 3px;
+padding: 20px;
 }
 .A{
 font-size: 70px;
-color: green
+color: grey;
+
+border: 3px;
+padding: 20px;
+}
+.qtext{
+    color: red;
+    font-size: 30px;
+
+    width: 50%;
+    padding: 20px;
+    border: 2px;
+    margin-left:20px;
+}
+.atext{
+    color: grey;
+    font-size: 30px;
+
+    width: 50%;
+    padding: 20px;
+    border: 2px;
+    margin-left:20px;
 }
 /*=========================================================================*/
