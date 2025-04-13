@@ -417,10 +417,11 @@ display: block;
 float to the right side of the screen
 30% screen width
 solid white border
-1em of spacing from border
-1em of padding, or rounded corners */
+1em of spacing from edge
+1em of padding from within border*/
 #notesdisclaimers{
     border: solid white;
+    border-radius: 14px;
     background-color: #1E1D1D;
     width: 46%;
     float: right;
@@ -431,10 +432,11 @@ solid white border
 /* Sets a border to the element with id="benefits" with: 
 30% screen width
 solid white border
-1em of spacing from border
-1em of padding, or rounded corners */
+1em of spacing from edge
+1em of padding from within border*/
 #benefits{
     border: solid white;
+    border-radius: 14px;
     background-color: #1E1D1D;
     width: 46%;
     float:left;
@@ -442,17 +444,26 @@ solid white border
     padding: 1em;
 }
 
+/* sets float of id="positions" to the left with 1em seperation from the edge */
 #positions{
     float:left;
-    padding: 1em; 
+    margin: 1em; 
 }
 
+/* Sets a border to the element with id="network_admin" with:
+solid white border
+2em patting from within border
+background colour of #1E1D1D */
 #network_admin{
     border: solid white;
     padding: 2em;
     background-color: #1E1D1D;
 }
 
+/* Sets a border to the element with id="systems_engineer" with:
+solid white border
+2em patting from within border
+background colour of #1E1D1D */
 #systems_engineer{
     border: solid white;
     padding: 2em;
@@ -467,8 +478,5 @@ solid white border
     background-image: url("images/testimage.jpg"); /* https://unsplash.com/photos/a-very-tall-tower-with-a-sky-background-NkRd5-_s6p0 */
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-    background-position-y: center;
 }
-
 
