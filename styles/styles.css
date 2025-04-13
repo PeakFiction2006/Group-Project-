@@ -455,8 +455,7 @@ h1{text-align: left}
 }
 .banner{
     background-color: #136abe;
-    width: 1200px;
-    margin: 40px;
+    width: 90%;
     padding: 30px;
 }
 .visionpic{
@@ -468,18 +467,6 @@ float:left;
 .visiontext{
 float:left;
 padding: 20px
-}
-.header{
-font-size: 55px;
-text-align: center;
-}
-.Footer{
-width: 100%;
-height: 40px;
-background-color: rgb(25, 25, 25);
-display:flex;
-justify-content: space-between; /*Spread contents evenly around*/
-align-items: center;
 }
 .background{
 padding-left: 2%;
