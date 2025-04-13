@@ -367,3 +367,135 @@ display: block;
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .site_menu_dropdown:hover .site_menu_dropdown_button {background-color: #8583fa;}
 /*=========================================================================*/
+
+
+
+/*For index.html and about.html specifically, writtern by Matthew, edited by Lachlan */
+h3{text-align: left}
+h1{text-align: left}
+.imground {border-radius: 50%}
+.superheader{
+    font-size: 60px;
+}
+.logo, .systempic{
+    display:flex;
+    justify-content:right;
+    align-items:center;
+    float: right;}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logotext, .systemtext{
+    float:right;
+    padding: 20px
+}
+.banner{
+    background-color: #136abe;
+    width: 1200px;
+    margin: 40px;
+    padding: 30px;
+}
+.visionpic{
+display:flex;
+justify-content:left;
+align-items:center;
+float:left;
+}
+.visiontext{
+float:left;
+padding: 20px
+}
+.header{
+font-size: 55px;
+text-align: center;
+}
+.Footer{
+width: 100%;
+height: 40px;
+background-color: rgb(25, 25, 25);
+display:flex;
+justify-content: space-between; /*Spread contents evenly around*/
+align-items: center;
+}
+.background{
+padding-left: 2%;
+padding-right: 2%;
+background-image: url("images/stock_computer_2.png"); /*set background picture to this*/
+background-repeat: repeat-x;
+background-size: cover; /*Cover avaiable area with it*/ /*Matthew: I set to auto cause it conflicts with repeat*/
+flex-grow: 1;
+border-radius: 0;
+}
+/*copy addition start*/.button{
+background-color: #ddd;
+border: none;
+color: black;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+margin: 4px 2px;
+cursor: pointer;
+border-radius: 16px;
+
+position: center;
+}
+.wrapper{
+text-align: center;
+}
+.button {width: 30%;}
+/*copy addition end*/
+.adhire{
+text-align:center;
+}
+.buttoncenter{
+text-align: center;
+}
+.button:hover{background-color:gray}
+.jobs{
+text-align:left;
+font-size: 40px;
+position: relative
+}
+.pbutton{
+position:absolute;
+top: 0px;
+right: 100px
+}
+.awardpic_column{
+float: right;
+width: 16%;
+padding: 25px;
+}
+.row::after {
+content: "";
+clear: both;
+display: table;
+}
+.column{
+font-size: 12px
+}
+.qline{
+height:100px;
+border-left: 7px solid red;
+border-radius: 0;
+padding: 25px;
+
+}
+.aline{
+height:100px;
+border-left: 7px solid green;
+border-radius: 0;
+padding: 25px;
+}
+.Q{
+font-size: 70px;
+color: red
+}
+.A{
+font-size: 70px;
+color: green
+}
+/*=========================================================================*/
