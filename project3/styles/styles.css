@@ -407,6 +407,12 @@ display: block;
 /*====== CODE BEYOND THIS LINE WAS DONE BY MARCUS AU FOR TESTING IN jobs.html ======*/
 
 
+#intro{
+    padding: 1em;
+}
+
+
+
 /* Sets a border to the element with id="notesdisclaimers" with: 
 float to the right side of the screen
 30% screen width
@@ -438,18 +444,19 @@ solid white border
 
 #positions{
     float:left;
- 
-    
+    padding: 1em; 
 }
 
 #network_admin{
     border: solid white;
     padding: 2em;
+    background-color: #1E1D1D;
 }
 
 #systems_engineer{
     border: solid white;
-    padding: 2em
+    padding: 2em;
+    background-color: #1E1D1D;
 }
 
 .jobs_site_content > * { /* Lachlan - Make all contents of the site_form_container_section classes use the fadein animation over 6 seconds*/
