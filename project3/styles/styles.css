@@ -406,10 +406,34 @@ display: block;
 
 /*====== CODE BEYOND THIS LINE WAS DONE BY MARCUS AU FOR TESTING ======*/
 
+
+/* Sets a border to the element with id="notesdisclaimers" with: 
+float to the right side of the screen
+30% screen width
+solid white border
+1em of spacing from border
+1em of padding, or rounded corners */
 #notesdisclaimers{
     border: solid white;
-    width: 30%;
+    width: 46%;
     float: right;
     margin: 1em;
     padding: 1em;
+}
+
+/* Sets a border to the element with id="benefits" with: 
+30% screen width
+solid white border
+1em of spacing from border
+1em of padding, or rounded corners */
+#benefits{
+    border: solid white;
+    width: 46%;
+    float:left;
+    margin: 1em;
+    padding: 1em;
+}
+
+#positions{
+    float:left;
 }
