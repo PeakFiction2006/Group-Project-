@@ -1,9 +1,9 @@
 /*
 filename: styles.css
-author: Lachlan Phillips
+author: Lachlan Phillips, with edits from Marcus and Matthew for their respective pages
 created: 21/3/2025
 last modified: 13/4/2025
-description: index.html,apply.html,about.html,jobs.html
+description: index.html,apply.html,about.html,jobs.html, packages.html
 */
 
 /*=========================================================================*/
@@ -13,8 +13,8 @@ html{height:100%} /* Lachlan - Ensuring height is set to 100% of page, Related t
 
 body { 
     background-color:rgb(19, 19, 19);/* Lachlan - Set background colour to near black*/
-    margin:0%; /*Lachlan - Set margin to zero so header/footer can fill page*/
-    padding:0%;
+    margin:0%; /*Lachlan - Make sure body isn't being pushed away from edge of page*/
+    padding:0%; /*Lachlan - Make sure content isn't pushed away from edge of body*/
     display:flex;
     flex-direction: column; /*Lachlan - Ensure flow of elements is vertical overall*/
     height: 100%; /* Lachlan - Ensuring height is set to 100% of page, Related to ensuring that divs can fill page*/
@@ -241,10 +241,6 @@ background colour of #1E1D1D */
     flex-direction: column;
     display:flex;
     justify-content: space-between;
-    /*background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-image: url("images/us.jpg");*/
     background-color: #1e1e1e;
 }
 #about_section_container { /*Lachlan - The container of all person sections*/
@@ -262,14 +258,14 @@ background colour of #1E1D1D */
     margin-top: 0px;
     margin-bottom: 5px;
 }
-.about_section section {
+.about_section section { /*Lachlan - Each section... for an about section... not contradictory at all*/
     background-color: #131313;
     width:100%;
     margin-bottom: 10px;
-    padding:1%;
-    padding-top:5px;
+    padding:1%; /*Lachlan - Make elements go away from the premimeter by 1% on all sides*/
+    padding-top:5px; /*Lachlan - Override top padding and make it just 5 pixels*/
 }
-.about_section section table {
+.about_section section table { /*Lachlan - Make sure the table takes up fill width*/
     width:100%;
 
 }
@@ -296,17 +292,17 @@ background colour of #1E1D1D */
 .about_section section table dt {
     font-weight: bold;
 }
-.about_section section table tr th {
+.about_section section table tr th { /*Make table header of table row color 2e2e2e*/
     background-color: #2e2e2e;
 }
-.about_section section table tr th:hover{ /*Lachlan - Hover effect for the table...?*/
+.about_section section table tr th:hover{ /*Lachlan - Hover effect for the table (Darken on hover)*/
     background-color: #131313;
 }
-.about_section section table tr td:hover{
+.about_section section table tr td:hover{ /*Lachlan - Hover effect for the table (Darken on hover)*/
     background-color: #0f0f0f;
     font-weight: bold;
 }
-.about_section section table tr td {
+.about_section section table tr td { /*Lachlan - Make background of td element of table row color 1e1e1e*/
     background-color: #1e1e1e;
     padding-left: 10px;
     height:20px;
@@ -322,10 +318,10 @@ background colour of #1E1D1D */
     text-align: right; /*This class was originally made by matthew, edited by lachlan*/
 }
 
-.about_background {
+.about_background { /*Lachlan - Set the background for about section*/
     background-image: url("images/stock_keyboard_2.png"); /* https://unsplash.com/photos/focus-photography-of-computer-keyboard-with-red-lights-feXpdV001o4*/
-    background-size: cover;
-    background-attachment: fixed;
+    background-size: cover; /*Cover the page with the background*/
+    background-attachment: fixed; /*Make it not scroll with page*/
 }
 
 /*=========================================================================*/
@@ -333,10 +329,10 @@ background colour of #1E1D1D */
 /*=========================================================================*/
 /*apply.html*/
 /*=========================================================================*/
-.site_form_title {
+.site_form_title { /*Lachlan - Make the title fade into view, over 5 seconds*/
     animation: site_content_fadein forwards 5s;
 }
-.site_form_background {
+.site_form_background { /*Lachlan - The background of apply.html*/
     background-image: url("images/stock_keyboard.png"); /*https://unsplash.com/photos/closeup-photo-of-computer-keyboard-WkfDrhxDMC8*/
     background-size: cover;
     background-attachment: fixed;
@@ -430,7 +426,7 @@ https://stackoverflow.com/questions/18776322/can-i-hide-the-element-if-it-doesnt
 @media screen and (max-width:1000px){
     .site_header_navbuttons{display:none;}
 }
-#site_header{ /*Lachlan - actual class for the header at the top of the page */
+#site_header{ /*Lachlan - actual id for the header at the top of the page */
     /*Not to be confused with HTML Header tags for metadata, this is for the topbar*/
     background-color: rgba(25,25,25);/* rgb(32, 42, 179);*/
     display: flex;
@@ -446,10 +442,6 @@ https://stackoverflow.com/questions/18776322/can-i-hide-the-element-if-it-doesnt
     flex-direction: column;
     justify-content: space-between; /*Spread contents evenly around*/
     height:fit-content;
-    /*border-top-style:inset;
-    border-radius: 0;
-    border-top-width: 10px;
-    border-top-color: #000000;*/
     padding-top: 20px;
     padding-bottom: 10px;
 }
@@ -691,20 +683,20 @@ display: block;
     margin-left: 2%;
     min-height: fit-content;
 }
-.package_packages :nth-child(1) p /*First package title colour*/
+.package_packages :nth-child(1) p /*Lachlan - First package title colour*/
 {
     background-color: #2c3dbc;
 }
-.package_packages :nth-child(2) p/*Second package title colour*/
+.package_packages :nth-child(2) p/*Lachlan - Second package title colour*/
 {
     background-color: #6b7093;
 }
-.package_packages :nth-child(3) p/*Third package title colour*/
+.package_packages :nth-child(3) p/*Lachlan - Third package title colour*/
 {
     background-color: #aa994d;
 }
 
-.package_packages div h3,.package_packages div p { 
+.package_packages div h3,.package_packages div p {  /*Lachlan - ensure elements take up 100% width and have no gaps with eachother*/
     width:100%;
     margin:0%;
 }
@@ -736,7 +728,7 @@ display: block;
     height:10%;
     background-color: #182d8a;
 }
-.package_packages div button:hover{
+.package_packages div button:hover{ /*Lachlan - Darken the button when hovered*/
     background-color: #283056;
 }
 
