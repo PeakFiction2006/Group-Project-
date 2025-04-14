@@ -1,9 +1,9 @@
 /*
 filename: styles.css
-author: Lachlan Phillips, Marcus Au (Changes done by Marcus are located at the botton after seperater)
+author: Lachlan Phillips
 created: 21/3/2025
 last modified: 13/4/2025
-description: testing for jobs.html
+description: index.html,apply.html,about.html,jobs.html
 */
 
 /*=========================================================================*/
@@ -26,7 +26,7 @@ body {
 .site_content{ /* Lachlan - Think of this as a custom body class for divs */
     padding-left: 2%; /*Offset content of this div from the left side of page by 2% of it*/
     padding-right: 2%; /*Offset content of this div from the right side of page by 2%*/
-    margin-bottom: 1.5%; /*Offset content from bottom*/
+    padding-bottom: 0.5%; /*Offset content from bottom*/
     flex-grow: 1; /*ensure it fills the site content area*/
     border-radius: 0; /*Override the roundness attributes set below*/
 }
@@ -131,12 +131,90 @@ table { /*Lachlan*/
     margin-bottom: 3px;
 }
 /*=========================================================================*/
+/*jobs.html*/
+/*=========================================================================*/
+.jobs_background {
+    background-image: url("images/stock_keyboard_2.png"); /*https://unsplash.com/photos/focus-photography-of-computer-keyboard-with-red-lights-feXpdV001o4*/
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.jobs_background div, .jobs_background aside{
+    background-color: #131313;
+    padding: 1%;
+    animation: site_content_fadein forwards 3s; /* Modified by Marcus to apply on jobs.html */
+}
+
+
+/* Sets a border to the element with id="notesdisclaimers" with: 
+float to the right side of the screen
+30% screen width
+solid white border
+1em of spacing from edge
+1em of padding from within border*/
+#notesdisclaimers{
+    border: solid white;
+    border-radius: 14px;
+    background-color: #1E1D1D;
+    width: 25%;
+    float: right;
+    margin: 1em;
+    padding: 1em;
+}
+
+/* Sets a border to the element with id="benefits" with: 
+30% screen width
+solid white border
+1em of spacing from edge
+1em of padding from within border*/
+#benefits{
+    border: solid white;
+    border-radius: 14px;
+    background-color: #1E1D1D;
+    width: 25%;
+    float:Right;
+    margin: 1em;
+    padding: 1em;
+}
+
+/* sets float of id="positions" to the left with 1em seperation from the edge */
+#positions{
+    float:left;
+    margin: 1em;
+    float: left; 
+    width:65%
+}
+
+/* Sets a border to the element with id="network_admin" with:
+solid white border
+2em patting from within border
+background colour of #1E1D1D */
+#network_admin{
+    border: solid white;
+    padding: 2em;
+    background-color: #1E1D1D;
+}
+
+/* Sets a border to the element with id="systems_engineer" with:
+solid white border
+2em patting from within border
+background colour of #1E1D1D */
+#systems_engineer{
+    border: solid white;
+    padding: 2em;
+    background-color: #1E1D1D;
+}
+
+/*=========================================================================*/
+
+
+/*=========================================================================*/
 /*about.html*/
 /*=========================================================================*/
 #aboutus_group_photo{
     width:100%;
     text-align: center;
-    animation: site_content_fadein forwards 6s; /*Lachlan - Fade it in 2 seconds*/
+    /*animation: site_content_fadein forwards 6s; /*Lachlan - Fade it in 2 seconds*/
 }
 #aboutus_group_photo figure img {
     width:80%;
@@ -157,16 +235,17 @@ table { /*Lachlan*/
     flex-direction: column;
     display:flex;
     justify-content: space-between;
-    background-repeat: no-repeat;
+    /*background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-image: url("images/us.jpg");
+    background-image: url("images/us.jpg");*/
+    background-color: #1e1e1e;
 }
 #about_section_container { /*Lachlan - The container of all person sections*/
     display:flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #131313;
+    /*background-color: #131313;*/
 }
 #about_section_container * *, #about_section_container h2{ /*All of the items and h2s in about section container*/
     animation: site_content_fadein forwards 6s; /*Lachlan - Fade it in 2 seconds*/
@@ -184,8 +263,32 @@ table { /*Lachlan*/
     padding:1%;
     padding-top:5px;
 }
-.about_section section table dl {
+.about_section section table {
+    width:100%;
+
+}
+.about_section section dl  /*Lachlan - Contributions list*/
+{
+    background-color: #121212;
+    width:fit-content;
+    padding:1%;
+    display: block;
+    border-radius: 25px;
+}
+.about_section section dl dt {
+    background-color: #2e2e2e;
+    border-radius: 25px;
+    text-align: center;
+}
+.about_section section dl dd {
+    margin:0;
+    text-align: center;
+}
+.about_section section table dl { /*Lachlan - related to table for likes etc*/
     background-color: #454545;
+}
+.about_section section table dt {
+    font-weight: bold;
 }
 .about_section section table tr th {
     background-color: #2e2e2e;
@@ -193,12 +296,23 @@ table { /*Lachlan*/
 .about_section section table tr td {
     background-color: #1e1e1e;
     padding-left: 10px;
+    height:20px;
 }
-.about_section section table dt {
-    font-weight: bold;
+
+.about_section_headshot{ /*This class was originally made by matthew, edited by lachlan*/
+    width:50%;
+    border: 5px solid rgb(146, 141, 255);
+    border-radius: 25px;
+    float:right;
 }
-.about_section section table {
-    width:100%;
+.about_section_id{ /*For student id */
+    text-align: right; /*This class was originally made by matthew, edited by lachlan*/
+}
+
+.about_background {
+    background-image: url("images/stock_keyboard_2.png"); /* https://unsplash.com/photos/focus-photography-of-computer-keyboard-with-red-lights-feXpdV001o4*/
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 /*=========================================================================*/
@@ -208,6 +322,11 @@ table { /*Lachlan*/
 /*=========================================================================*/
 .site_form_title {
     animation: site_content_fadein forwards 5s;
+}
+.site_form_background {
+    background-image: url("images/stock_keyboard.png"); /*https://unsplash.com/photos/closeup-photo-of-computer-keyboard-WkfDrhxDMC8*/
+    background-size: cover;
+    background-attachment: fixed;
 }
 .site_form_container { /*Lachlan - For the container that contains all the form submission things*/
     background-color: rgb(26, 26, 26);
@@ -404,75 +523,154 @@ display: block;
 .site_menu_dropdown:hover .site_menu_dropdown_button {background-color: #8583fa;}
 /*=========================================================================*/
 
-/*====== CODE BEYOND THIS LINE WAS DONE BY MARCUS AU FOR TESTING IN jobs.html ======*/
 
 
-#intro{
-    padding: 1em;
+/*For index.html specifically, writtern by Matthew, edited by Lachlan */
+h3{text-align: left}
+h1{text-align: left}
+.imground {border-radius: 50%}
+.superheader{
+    font-size: 60px;
+}
+.logo, .systempic{
+    display:flex;
+    justify-content:right;
+    align-items:center;
+    float: right;}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logotext, .systemtext{
+    float:right;
+    padding: 20px
+}
+.banner{
+    background-color: #136abe;
+    width: 90%;
+    padding: 30px;
+}
+.visionpic{
+display:flex;
+justify-content:left;
+align-items:center;
+float:left;
+}
+.visiontext{
+float:left;
+padding: 20px
+}
+.background{
+padding-left: 2%;
+padding-right: 2%;
+background-image: url("images/stock_computer_2.png"); /*set background picture to this*/
+background-repeat: repeat-x;
+background-size: cover; /*Cover avaiable area with it*/ /*Matthew: I set to auto cause it conflicts with repeat*/
+flex-grow: 1;
+border-radius: 0;
+}
+/*copy addition start*/.button{
+background-color: #ddd;
+border: none;
+color: black;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+margin: 4px 2px;
+cursor: pointer;
+border-radius: 16px;
+
+position: center;
+}
+.wrapper{
+text-align: center;
+}
+.button {width: 30%;}
+/*copy addition end*/
+.adhire{
+text-align:center;
+}
+.buttoncenter{
+text-align: center;
+}
+.button:hover{background-color:gray}
+.jobs{
+text-align:left;
+font-size: 40px;
+position: relative
+}
+.pbutton{
+position:absolute;
+top: 0px;
+right: 100px
+}
+.awardpic_column{
+float: right;
+width: 16%;
+padding: 25px;
+}
+.row::after {
+content: "";
+clear: both;
+display: table;
+}
+.column{
+font-size: 12px
 }
 
+.qline{
+height:100px;
+border-left: 7px solid red;
+border-radius: 0;
+padding: 25px;
 
-
-/* Sets a border to the element with id="notesdisclaimers" with: 
-float to the right side of the screen
-30% screen width
-solid white border
-1em of spacing from edge
-1em of padding from within border*/
-#notesdisclaimers{
-    border: solid white;
-    border-radius: 14px;
-    background-color: #1E1D1D;
-    width: 25%;
-    float: right;
-    margin: 1em;
-    padding: 1em;
+align-items:center;
+margin-bottom: 20px;
+display: flex
 }
 
-/* Sets a border to the element with id="benefits" with: 
-30% screen width
-solid white border
-1em of spacing from edge
-1em of padding from within border*/
-#benefits{
-    border: solid white;
-    border-radius: 14px;
-    background-color: #1E1D1D;
-    width: 46%;
-    float:left;
-    margin: 1em;
-    padding: 1em;
+.aline{
+height:100px;
+border-left: 7px solid grey;
+border-radius: 0;
+padding: 25px;
+
+align-items:center;
+margin-bottom: 20px;
+display: flex
 }
+.Q{
+font-size: 70px;
+color: red;
 
-/* sets float of id="positions" to the left with 1em seperation from the edge */
-#positions{
-    float:left;
-    margin: 1em; 
+border: 3px;
+padding: 20px;
 }
+.A{
+font-size: 70px;
+color: grey;
 
-/* Sets a border to the element with id="network_admin" with:
-solid white border
-2em patting from within border
-background colour of #1E1D1D */
-#network_admin{
-    border: solid white;
-    padding: 2em;
-    background-color: #1E1D1D;
+border: 3px;
+padding: 20px;
 }
+.qtext{
+    color: red;
+    font-size: 30px;
 
-/* Sets a border to the element with id="systems_engineer" with:
-solid white border
-2em patting from within border
-background colour of #1E1D1D */
-#systems_engineer{
-    border: solid white;
-    padding: 2em;
-    background-color: #1E1D1D;
+    width: 50%;
+    padding: 20px;
+    border: 2px;
+    margin-left:20px;
 }
+.atext{
+    color: grey;
+    font-size: 30px;
 
-.jobs_site_content > * { /* Lachlan - Make all contents of the site_form_container_section classes use the fadein animation over 6 seconds*/
-    animation: site_content_fadein forwards 6s; /* Modified by Marcus to apply on jobs.html */
+    width: 50%;
+    padding: 20px;
+    border: 2px;
+    margin-left:20px;
 }
-
-
 
