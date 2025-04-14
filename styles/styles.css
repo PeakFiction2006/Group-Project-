@@ -144,45 +144,41 @@ table { /*Lachlan*/
     padding: 1%;
     animation: site_content_fadein forwards 3s; /* Modified by Marcus to apply on jobs.html */
 }
-
-
-/* Sets a border to the element with id="notesdisclaimers" with: 
+#jobs_disclaim_section
+{
+    display:flex;
+    flex-direction: column;
+    background:none;
+    float:right;
+    width:25%;
+}
+/* Sets a border to all div elements within id="jobs_disclaim_section" aside area with: 
 float to the right side of the screen
 30% screen width
 solid white border
 1em of spacing from edge
 1em of padding from within border*/
-#notesdisclaimers{
+#jobs_disclaim_section div {
     border: solid white;
     border-radius: 14px;
     background-color: #1E1D1D;
-    width: 25%;
-    float: right;
     margin: 1em;
     padding: 1em;
 }
 
-/* Sets a border to the element with id="benefits" with: 
-30% screen width
-solid white border
-1em of spacing from edge
-1em of padding from within border*/
-#benefits{
-    border: solid white;
-    border-radius: 14px;
-    background-color: #1E1D1D;
-    width: 25%;
-    float:Right;
-    margin: 1em;
-    padding: 1em;
-}
 
-/* sets float of id="positions" to the left with 1em seperation from the edge */
-#positions{
+
+
+/* sets float of id="jobs_positions" to the left*/
+#jobs_positions{
+    background:none;
     float:left;
-    margin: 1em;
-    float: left; 
-    width:65%
+    width:65%;
+    margin-top:0;
+}
+
+#jobs_positions h2 {
+    margin-top: 0;
 }
 
 /* Sets a border to the element with id="network_admin" with:

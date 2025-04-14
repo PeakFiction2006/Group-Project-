@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COMPANY NAME - Application Portal</title>
+    <title>VDLS - Application Portal</title>
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="icon" href="../images/icon.png">     <!--Logo source https://www.freeimages.com/vector/generic-logo-4846322-->
     <meta name="author" content="Matthew, Marcus and Lachlan ">
@@ -111,7 +111,7 @@
                     </p>
                     <p>
                         <label for="detail_location_postcode">Postcode</label> <!-- Lachlan - Postcode check, ensure length equals 4, and all digits are numbers-->
-                        <input type="text" id="detail_location_postcode" name="detail_location_postcode" minlength="4" maxlength="4" placeholder="0000" pattern="^[0-9]{4}" required>
+                        <input type="text" id="detail_location_postcode" name="detail_location_postcode" minlength="4" maxlength="4" min="200" max="9944" placeholder="0000" pattern="^[0-9]{4}" required>
                     </p>
                 </fieldset>
 
@@ -124,7 +124,7 @@
                     </p>
                     <p>
                         <label for="detail_contact_phone">Phone Number (No Spaces)</label>        <!--Lachlan - Make sure number only has numbers, and is between 8 and 12 characters long-->
-                        <input type="text" id="detail_contact_phone" name="detail_contact_phone" pattern="^[0-9]{8,12}$" required placeholder="0498099099">
+                        <input type="text" id="detail_contact_phone" name="detail_contact_phone" maxlength="12" pattern="^[0-9]{8,12}$" required placeholder="0498099099">
                     </p>
                 </fieldset>
 
