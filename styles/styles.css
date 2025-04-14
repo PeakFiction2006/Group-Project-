@@ -201,6 +201,16 @@ background colour of #1E1D1D */
     background-color: #1E1D1D;
 }
 
+/* Sets a border to the element with id="security_analyst" with:
+solid white border
+2em patting from within border
+background colour of #1E1D1D */
+#security_analyst{
+    border: solid white;
+    padding:2em;
+    background-color: #1E1D1D;
+}
+
 /*=========================================================================*/
 
 

@@ -144,45 +144,41 @@ table { /*Lachlan*/
     padding: 1%;
     animation: site_content_fadein forwards 3s; /* Modified by Marcus to apply on jobs.html */
 }
-
-
-/* Sets a border to the element with id="notesdisclaimers" with: 
+#jobs_disclaim_section
+{
+    display:flex;
+    flex-direction: column;
+    background:none;
+    float:right;
+    width:25%;
+}
+/* Sets a border to all div elements within id="jobs_disclaim_section" aside area with: 
 float to the right side of the screen
 30% screen width
 solid white border
 1em of spacing from edge
 1em of padding from within border*/
-#notesdisclaimers{
+#jobs_disclaim_section div {
     border: solid white;
     border-radius: 14px;
     background-color: #1E1D1D;
-    width: 25%;
-    float: right;
     margin: 1em;
     padding: 1em;
 }
 
-/* Sets a border to the element with id="benefits" with: 
-30% screen width
-solid white border
-1em of spacing from edge
-1em of padding from within border*/
-#benefits{
-    border: solid white;
-    border-radius: 14px;
-    background-color: #1E1D1D;
-    width: 25%;
-    float:Right;
-    margin: 1em;
-    padding: 1em;
-}
 
-/* sets float of id="positions" to the left with 1em seperation from the edge */
-#positions{
+
+
+/* sets float of id="jobs_positions" to the left*/
+#jobs_positions{
+    background:none;
     float:left;
-    margin: 1em;
-    float: left; 
-    width:65%
+    width:65%;
+    margin-top:0;
+}
+
+#jobs_positions h2 {
+    margin-top: 0;
 }
 
 /* Sets a border to the element with id="network_admin" with:
@@ -202,6 +198,16 @@ background colour of #1E1D1D */
 #systems_engineer{
     border: solid white;
     padding: 2em;
+    background-color: #1E1D1D;
+}
+
+/* Sets a border to the element with id="security_analyst" with:
+solid white border
+2em patting from within border
+background colour of #1E1D1D */
+#security_analyst{
+    border: solid white;
+    padding:2em;
     background-color: #1E1D1D;
 }
 
@@ -292,6 +298,13 @@ background colour of #1E1D1D */
 }
 .about_section section table tr th {
     background-color: #2e2e2e;
+}
+.about_section section table tr th:hover{ /*Lachlan - Hover effect for the table...?*/
+    background-color: #131313;
+}
+.about_section section table tr td:hover{
+    background-color: #0f0f0f;
+    font-weight: bold;
 }
 .about_section section table tr td {
     background-color: #1e1e1e;
@@ -526,151 +539,199 @@ display: block;
 
 
 /*For index.html specifically, writtern by Matthew, edited by Lachlan */
-h3{text-align: left}
-h1{text-align: left}
-.imground {border-radius: 50%}
-.superheader{
-    font-size: 60px;
+.background{
+    padding-left: 2%;
+    padding-right: 2%;
+    background-image: url("images/stock_computer_2.png"); /*set background picture to this*/
+    background-repeat: repeat-x;
+    background-size: cover; /*Cover avaiable area with it*/
+    flex-grow: 1;
+    border-radius: 0;
+}
+.container{ /*makes all flexed items have a space between them, inspiration from https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_justify-content_space-between*/
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
 }
 .logo, .systempic{
     display:flex;
     justify-content:right;
     align-items:center;
-    float: right;}
-.container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    float: right;
 }
-.logotext, .systemtext{
-    float:right;
-    padding: 20px
+.superheader{
+    font-size: 60px;
 }
+.imground {border-radius: 50%}
 .banner{
     background-color: #136abe;
     width: 90%;
     padding: 30px;
 }
-.visionpic{
-display:flex;
-justify-content:left;
-align-items:center;
-float:left;
-}
-.visiontext{
-float:left;
-padding: 20px
-}
-.background{
-padding-left: 2%;
-padding-right: 2%;
-background-image: url("images/stock_computer_2.png"); /*set background picture to this*/
-background-repeat: repeat-x;
-background-size: cover; /*Cover avaiable area with it*/ /*Matthew: I set to auto cause it conflicts with repeat*/
-flex-grow: 1;
-border-radius: 0;
-}
-/*copy addition start*/.button{
-background-color: #ddd;
-border: none;
-color: black;
-padding: 10px 20px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-margin: 4px 2px;
-cursor: pointer;
-border-radius: 16px;
-
-position: center;
-}
-.wrapper{
-text-align: center;
-}
-.button {width: 30%;}
-/*copy addition end*/
-.adhire{
-text-align:center;
-}
-.buttoncenter{
-text-align: center;
-}
-.button:hover{background-color:gray}
-.jobs{
-text-align:left;
-font-size: 40px;
-position: relative
-}
-.pbutton{
-position:absolute;
-top: 0px;
-right: 100px
-}
 .awardpic_column{
-float: right;
-width: 16%;
-padding: 25px;
-}
-.row::after {
-content: "";
-clear: both;
-display: table;
+    float: right;
+    width: 16%;
+    padding: 25px;
 }
 .column{
-font-size: 12px
+    font-size: 12px
+    }
+.visionpic{
+    display:flex;
+    justify-content:left;
+    align-items:center;
+    float:left;
 }
-
+.visiontext{
+    float:left;
+    padding: 20px
+}
+.linkbutton{
+    background-color: white;
+    color:black;
+    text-align:center;
+    display:inline-block;
+    border-radius:25px;
+    padding:25px 200px;
+    text-decoration:none;
+    position: relative;
+    left:30%
+}
+.infolinkbutton{
+    background-color: white;
+    color:black;
+    text-align:center;
+    display:inline-block;
+    border-radius:25px;
+    min-width: 250px;
+    padding:15px 100px;
+    text-decoration:none;
+    position: relative;
+    left:65%;
+    top: -50px;
+}
+.jobs a:hover{
+    background-color:  #ddd;
+}
 .qline{
-height:100px;
-border-left: 7px solid red;
-border-radius: 0;
-padding: 25px;
-
-align-items:center;
-margin-bottom: 20px;
-display: flex
-}
-
-.aline{
-height:100px;
-border-left: 7px solid grey;
-border-radius: 0;
-padding: 25px;
-
-align-items:center;
-margin-bottom: 20px;
-display: flex
-}
-.Q{
-font-size: 70px;
-color: red;
-
-border: 3px;
-padding: 20px;
-}
-.A{
-font-size: 70px;
-color: grey;
-
-border: 3px;
-padding: 20px;
-}
-.qtext{
+    height:100px;
+    border-left: 7px solid red;
+    border-radius: 0;
+    padding: 25px;
+    
+    align-items:center;
+    margin-bottom: 20px;
+    display: flex
+    }
+    
+    .aline{
+    height:100px;
+    border-left: 7px solid grey;
+    border-radius: 0;
+    padding: 25px;
+    
+    align-items:center;
+    margin-bottom: 20px;
+    display: flex
+    }
+    .Q{
+    font-size: 70px;
     color: red;
-    font-size: 30px;
-
-    width: 50%;
+    
+    border: 3px;
     padding: 20px;
-    border: 2px;
-    margin-left:20px;
-}
-.atext{
+    }
+    .A{
+    font-size: 70px;
     color: grey;
-    font-size: 30px;
-
-    width: 50%;
+    
+    border: 3px;
     padding: 20px;
-    border: 2px;
-    margin-left:20px;
+    }
+    .qtext{
+        color: red;
+        font-size: 30px;
+    
+        width: 50%;
+        padding: 20px;
+        border: 2px;
+        margin-left:20px;
+    }
+    .atext{
+        color: grey;
+        font-size: 30px;
+    
+        width: 50%;
+        padding: 20px;
+        border: 2px;
+        margin-left:20px;
+    }
+
+/*=======================================================*/
+/*=======================================================*/
+/*packages.html*/
+/*=======================================================*/
+.package_packages{ /*Lachlan - The div containing the 3 package items*/
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2%;
+    height:80%;
+}
+.package_packages div { /*Lachlan - The div for each package*/
+    background-color: #1f1f1f;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    margin-right: 2%;
+    margin-left: 2%;
+    min-height: fit-content;
+}
+.package_packages :nth-child(1) p /*First package title colour*/
+{
+    background-color: #2c3dbc;
+}
+.package_packages :nth-child(2) p/*Second package title colour*/
+{
+    background-color: #6b7093;
+}
+.package_packages :nth-child(3) p/*Third package title colour*/
+{
+    background-color: #aa994d;
 }
 
+.package_packages div h3,.package_packages div p { 
+    width:100%;
+    margin:0%;
+}
+.package_packages div h3 {
+    background-color: #0f0f0f;
+}
+.package_packages div p { /*Lachlan - Ensure the top bar of the package is rounded at top*/
+   
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.package_packages div ul { /*Lachlan - contains all the checkbox items*/
+    text-align: center;
+    padding:5%;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.package_packages div ul li{ /*Lachlan - checkbox item*/
+    list-style-type: none;
+    background-color: #3d58cd;
+    margin-top: 4%; /*Just to help spread them out*/
+    height:fit-content;
+}
+
+.package_packages div button { /*Lachlan - Bottom package purchase button*/
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin-top:auto;
+    height:10%;
+    background-color: #182d8a;
+}
+.package_packages div button:hover{
+    background-color: #283056;
+}
