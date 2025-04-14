@@ -200,8 +200,32 @@ table { /*Lachlan*/
     padding:1%;
     padding-top:5px;
 }
-.about_section section table dl {
+.about_section section table {
+    width:100%;
+
+}
+.about_section section dl  /*Lachlan - Contributions list*/
+{
+    background-color: #121212;
+    width:fit-content;
+    padding:1%;
+    display: block;
+    border-radius: 25px;
+}
+.about_section section dl dt {
+    background-color: #2e2e2e;
+    border-radius: 25px;
+    text-align: center;
+}
+.about_section section dl dd {
+    margin:0;
+    text-align: center;
+}
+.about_section section table dl { /*Lachlan - related to table for likes etc*/
     background-color: #454545;
+}
+.about_section section table dt {
+    font-weight: bold;
 }
 .about_section section table tr th {
     background-color: #2e2e2e;
@@ -209,13 +233,19 @@ table { /*Lachlan*/
 .about_section section table tr td {
     background-color: #1e1e1e;
     padding-left: 10px;
+    height:20px;
 }
-.about_section section table dt {
-    font-weight: bold;
+
+.about_section_headshot{ /*This class was originally made by matthew, edited by lachlan*/
+    width:25%;
+    border: 5px solid rgb(146, 141, 255);
+    border-radius: 25px;
+    float:right;
 }
-.about_section section table {
-    width:100%;
+.about_section_id{ /*For student id */
+    text-align: center; /*This class was originally made by matthew, edited by lachlan*/
 }
+
 .about_background {
     background-image: url("images/stock_keyboard_2.png"); /* https://unsplash.com/photos/focus-photography-of-computer-keyboard-with-red-lights-feXpdV001o4*/
     background-size: cover;
@@ -580,38 +610,4 @@ padding: 20px;
     border: 2px;
     margin-left:20px;
 }
-/*=========================================================================*/
-/*For about.html specifically, writtern by Matthew, edited by Lachlan */
-.headshot{
-    height: 300px;
-    width:300px;
-    border: 5px solid purple;
 
-    margin-left:800px;
-}
-.id{
-    margin-left:800px;
-}
-.details{
-    position: relative;
-    left:800px;
-    padding: 5px;
-}
-.bio_lachlan{
-    position: relative;
-    bottom: 840px
-
-}
-.bio_matthew{
-    position: relative;
-    bottom: 840px
-
-}
-.bio_marcus{
-    position: relative;
-    bottom: 740px
-
-}
-.abouttable{
-    text-align: center;
-}
