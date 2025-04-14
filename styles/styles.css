@@ -733,3 +733,41 @@ display: block;
 }
 
 
+/*=======================================================*/
+/*=======================================================*/
+/*standardpackage.html*/
+/*=======================================================*/
+
+/* Sets a border to the element with id="standard_package" with:
+2em patting from within border
+background colour of #1E1D1D */
+#standard_package{
+    padding: 2em;
+    background-color: #1E1D1D;
+}
+
+/*=======================================================*/
+/*=======================================================*/
+/*plusultrapackage.html*/
+/*=======================================================*/
+
+/* Sets a border to the element with id="standard_package" with:
+2em patting from within border
+background colour of #1E1D1D */
+#plus_ultra_package{
+    padding: 2em;
+    background-color: #1E1D1D;
+}
+
+/*=======================================================*/
+/*=======================================================*/
+/*plusultrapackage.html*/
+/*=======================================================*/
+
+/* Sets a border to the element with id="standard_package" with:
+2em patting from within border
+background colour of #1E1D1D */
+#premium_package{
+    padding: 2em;
+    background-color: #1E1D1D;
+}
