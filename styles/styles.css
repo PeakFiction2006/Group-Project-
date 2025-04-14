@@ -600,7 +600,7 @@ display: block;
     left:65%;
     top: -50px;
 }
-a:hover{
+.jobs a:hover{
     background-color:  #ddd;
 }
 .qline{
