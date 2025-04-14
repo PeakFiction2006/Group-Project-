@@ -2,7 +2,7 @@
 filename: styles.css
 author: Lachlan Phillips
 created: 21/3/2025
-last modified: 12/4/2025
+last modified: 13/4/2025
 description: index.html,apply.html,about.html,jobs.html
 */
 
@@ -432,7 +432,7 @@ display: block;
 
 
 
-/*For index.html and about.html specifically, writtern by Matthew, edited by Lachlan */
+/*For index.html specifically, writtern by Matthew, edited by Lachlan */
 h3{text-align: left}
 h1{text-align: left}
 .imground {border-radius: 50%}
@@ -455,8 +455,7 @@ h1{text-align: left}
 }
 .banner{
     background-color: #136abe;
-    width: 1200px;
-    margin: 40px;
+    width: 90%;
     padding: 30px;
 }
 .visionpic{
@@ -468,18 +467,6 @@ float:left;
 .visiontext{
 float:left;
 padding: 20px
-}
-.header{
-font-size: 55px;
-text-align: center;
-}
-.Footer{
-width: 100%;
-height: 40px;
-background-color: rgb(25, 25, 25);
-display:flex;
-justify-content: space-between; /*Spread contents evenly around*/
-align-items: center;
 }
 .background{
 padding-left: 2%;
@@ -594,3 +581,27 @@ padding: 20px;
     margin-left:20px;
 }
 /*=========================================================================*/
+/*For about.html specifically, writtern by Matthew, edited by Lachlan */
+.headshot{
+    height: 300px;
+    width:300px;
+    border: 5px solid purple;
+
+    margin-left:800px;
+}
+.id{
+    margin-left:800px;
+}
+.details{
+    position: relative;
+    left:800px;
+    padding: 5px;
+}
+.bio{
+    position: relative;
+    bottom: 600px;
+
+}
+.abouttable{
+    text-align: center;
+}
