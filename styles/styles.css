@@ -2,7 +2,7 @@
 filename: styles.css
 author: Lachlan Phillips, with edits from Marcus and Matthew for their respective pages
 created: 21/3/2025
-last modified: 13/4/2025
+last modified: 14/4/2025
 description: index.html,apply.html,about.html,jobs.html, packages.html
 */
 
@@ -733,3 +733,41 @@ display: block;
 }
 
 
+/*=======================================================*/
+/*=======================================================*/
+/*standardpackage.html*/
+/*=======================================================*/
+
+/* Sets a border to the element with id="standard_package" with:
+2em patting from within border
+background colour of #1E1D1D */
+#standard_package{
+    padding: 2em;
+    background-color: #1E1D1D;
+}
+
+/*=======================================================*/
+/*=======================================================*/
+/*plusultrapackage.html*/
+/*=======================================================*/
+
+/* Sets a border to the element with id="standard_package" with:
+2em patting from within border
+background colour of #1E1D1D */
+#plus_ultra_package{
+    padding: 2em;
+    background-color: #1E1D1D;
+}
+
+/*=======================================================*/
+/*=======================================================*/
+/*plusultrapackage.html*/
+/*=======================================================*/
+
+/* Sets a border to the element with id="standard_package" with:
+2em patting from within border
+background colour of #1E1D1D */
+#premium_package{
+    padding: 2em;
+    background-color: #1E1D1D;
+}

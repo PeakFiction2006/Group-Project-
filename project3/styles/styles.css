@@ -762,5 +762,15 @@ background colour of #1E1D1D */
     background-color: #1E1D1D;
 }
 
+/*=======================================================*/
+/*=======================================================*/
+/*plusultrapackage.html*/
+/*=======================================================*/
 
-
+/* Sets a border to the element with id="standard_package" with:
+2em patting from within border
+background colour of #1E1D1D */
+#premium_package{
+    padding: 2em;
+    background-color: #1E1D1D;
+}
