@@ -293,6 +293,13 @@ background colour of #1E1D1D */
 .about_section section table tr th {
     background-color: #2e2e2e;
 }
+.about_section section table tr th:hover{ /*Lachlan - Hover effect for the table...?*/
+    background-color: #131313;
+}
+.about_section section table tr td:hover{
+    background-color: #0f0f0f;
+    font-weight: bold;
+}
 .about_section section table tr td {
     background-color: #1e1e1e;
     padding-left: 10px;
