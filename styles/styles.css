@@ -577,40 +577,35 @@ background-size: cover; /*Cover avaiable area with it*/ /*Matthew: I set to auto
 flex-grow: 1;
 border-radius: 0;
 }
-/*copy addition start*/.button{
-background-color: #ddd;
-border: none;
-color: black;
-padding: 10px 20px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-margin: 4px 2px;
-cursor: pointer;
-border-radius: 16px;
+
+.linkbutton{
+    background-color: white;
+    color:black;
+    text-align:center;
+    display:inline-block;
+    border-radius:25px;
+    padding:25px 200px;
+    text-decoration:none;
+    position: relative;
+    left:30%
 }
-.wrapper{
-text-align: center;
+a:hover{
+    background-color:  #ddd;
 }
-.button {width: 30%;}
-/*copy addition end*/
-.adhire{
-text-align:center;
+.activeinfolinkbutton, .inactiveinfolinkbutton{
+    background-color: white;
+    color:black;
+    text-align:center;
+    display:inline-block;
+    border-radius:25px;
+    min-width: 250px;
+    padding:15px 100px;
+    text-decoration:none;
+    position: relative;
+    left:65%;
+    top: -50px;
 }
-.buttoncenter{
-text-align: center;
-}
-.button:hover{background-color:gray}
-.jobs{
-text-align:left;
-font-size: 40px;
-position: relative
-}
-.pbutton{
-position:absolute;
-top: 0px;
-right: 100px
-}
+
 .awardpic_column{
 float: right;
 width: 16%;
