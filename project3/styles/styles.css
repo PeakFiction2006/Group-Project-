@@ -474,9 +474,5 @@ background colour of #1E1D1D */
     animation: site_content_fadein forwards 6s; /* Modified by Marcus to apply on jobs.html */
 }
 
-.jobs_site_content{ /* By Lachlan, modified by Marcus to attempt to apply a background image to jobs.html */
-    background-image: url("images/testimage.jpg"); /* https://unsplash.com/photos/a-very-tall-tower-with-a-sky-background-NkRd5-_s6p0 */
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 
