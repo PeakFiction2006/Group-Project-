@@ -597,9 +597,19 @@ padding: 20px;
     left:800px;
     padding: 5px;
 }
-.bio{
+.bio_lachlan{
     position: relative;
-    bottom: 600px;
+    bottom: 840px
+
+}
+.bio_matthew{
+    position: relative;
+    bottom: 840px
+
+}
+.bio_marcus{
+    position: relative;
+    bottom: 740px
 
 }
 .abouttable{
