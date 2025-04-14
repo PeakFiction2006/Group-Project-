@@ -529,149 +529,134 @@ display: block;
 
 
 /*For index.html specifically, writtern by Matthew, edited by Lachlan */
-h3{text-align: left}
-h1{text-align: left}
-.imground {border-radius: 50%}
-.superheader{
-    font-size: 60px;
+.background{
+    padding-left: 2%;
+    padding-right: 2%;
+    background-image: url("images/stock_computer_2.png"); /*set background picture to this*/
+    background-repeat: repeat-x;
+    background-size: cover; /*Cover avaiable area with it*/
+    flex-grow: 1;
+    border-radius: 0;
+}
+.container{ /*makes all flexed items have a space between them, inspiration from https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_justify-content_space-between*/
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
 }
 .logo, .systempic{
     display:flex;
     justify-content:right;
     align-items:center;
-    float: right;}
-.container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    float: right;
 }
-.logotext, .systemtext{
-    float:right;
-    padding: 20px
+.superheader{
+    font-size: 60px;
 }
+.imground {border-radius: 50%}
 .banner{
     background-color: #136abe;
     width: 90%;
     padding: 30px;
 }
-.visionpic{
-display:flex;
-justify-content:left;
-align-items:center;
-float:left;
-}
-.visiontext{
-float:left;
-padding: 20px
-}
-.background{
-padding-left: 2%;
-padding-right: 2%;
-background-image: url("images/stock_computer_2.png"); /*set background picture to this*/
-background-repeat: repeat-x;
-background-size: cover; /*Cover avaiable area with it*/ /*Matthew: I set to auto cause it conflicts with repeat*/
-flex-grow: 1;
-border-radius: 0;
-}
-/*copy addition start*/.button{
-background-color: #ddd;
-border: none;
-color: black;
-padding: 10px 20px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-margin: 4px 2px;
-cursor: pointer;
-border-radius: 16px;
-}
-.wrapper{
-text-align: center;
-}
-.button {width: 30%;}
-/*copy addition end*/
-.adhire{
-text-align:center;
-}
-.buttoncenter{
-text-align: center;
-}
-.button:hover{background-color:gray}
-.jobs{
-text-align:left;
-font-size: 40px;
-position: relative
-}
-.pbutton{
-position:absolute;
-top: 0px;
-right: 100px
-}
 .awardpic_column{
-float: right;
-width: 16%;
-padding: 25px;
-}
-.row::after {
-content: "";
-clear: both;
-display: table;
+    float: right;
+    width: 16%;
+    padding: 25px;
 }
 .column{
-font-size: 12px
+    font-size: 12px
+    }
+.visionpic{
+    display:flex;
+    justify-content:left;
+    align-items:center;
+    float:left;
 }
-
+.visiontext{
+    float:left;
+    padding: 20px
+}
+.linkbutton{
+    background-color: white;
+    color:black;
+    text-align:center;
+    display:inline-block;
+    border-radius:25px;
+    padding:25px 200px;
+    text-decoration:none;
+    position: relative;
+    left:30%
+}
+.infolinkbutton{
+    background-color: white;
+    color:black;
+    text-align:center;
+    display:inline-block;
+    border-radius:25px;
+    min-width: 250px;
+    padding:15px 100px;
+    text-decoration:none;
+    position: relative;
+    left:65%;
+    top: -50px;
+}
+a:hover{
+    background-color:  #ddd;
+}
 .qline{
-height:100px;
-border-left: 7px solid red;
-border-radius: 0;
-padding: 25px;
-
-align-items:center;
-margin-bottom: 20px;
-display: flex
-}
-
-.aline{
-height:100px;
-border-left: 7px solid grey;
-border-radius: 0;
-padding: 25px;
-
-align-items:center;
-margin-bottom: 20px;
-display: flex
-}
-.Q{
-font-size: 70px;
-color: red;
-
-border: 3px;
-padding: 20px;
-}
-.A{
-font-size: 70px;
-color: grey;
-
-border: 3px;
-padding: 20px;
-}
-.qtext{
+    height:100px;
+    border-left: 7px solid red;
+    border-radius: 0;
+    padding: 25px;
+    
+    align-items:center;
+    margin-bottom: 20px;
+    display: flex
+    }
+    
+    .aline{
+    height:100px;
+    border-left: 7px solid grey;
+    border-radius: 0;
+    padding: 25px;
+    
+    align-items:center;
+    margin-bottom: 20px;
+    display: flex
+    }
+    .Q{
+    font-size: 70px;
     color: red;
-    font-size: 30px;
-
-    width: 50%;
+    
+    border: 3px;
     padding: 20px;
-    border: 2px;
-    margin-left:20px;
-}
-.atext{
+    }
+    .A{
+    font-size: 70px;
     color: grey;
-    font-size: 30px;
-
-    width: 50%;
+    
+    border: 3px;
     padding: 20px;
-    border: 2px;
-    margin-left:20px;
-}
+    }
+    .qtext{
+        color: red;
+        font-size: 30px;
+    
+        width: 50%;
+        padding: 20px;
+        border: 2px;
+        margin-left:20px;
+    }
+    .atext{
+        color: grey;
+        font-size: 30px;
+    
+        width: 50%;
+        padding: 20px;
+        border: 2px;
+        margin-left:20px;
+    }
+
+
+
 
