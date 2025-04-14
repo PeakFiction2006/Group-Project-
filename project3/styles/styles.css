@@ -201,6 +201,16 @@ background colour of #1E1D1D */
     background-color: #1E1D1D;
 }
 
+/* Sets a border to the element with id="security_analyst" with:
+solid white border
+2em patting from within border
+background colour of #1E1D1D */
+#security_analyst{
+    border: solid white;
+    padding:2em;
+    background-color: #1E1D1D;
+}
+
 /*=========================================================================*/
 
 
@@ -661,14 +671,14 @@ display: block;
 /*=======================================================*/
 /*packages.html*/
 /*=======================================================*/
-.package_packages{
+.package_packages{ /*Lachlan - The div containing the 3 package items*/
     display:flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 2%;
     height:80%;
 }
-.package_packages div {
+.package_packages div { /*Lachlan - The div for each package*/
     background-color: #1f1f1f;
     text-align: center;
     display:flex;
@@ -677,45 +687,45 @@ display: block;
     margin-left: 2%;
     min-height: fit-content;
 }
-.package_packages :nth-child(1) p
+.package_packages :nth-child(1) p /*First package title colour*/
 {
     background-color: #2c3dbc;
 }
-.package_packages :nth-child(2) p
+.package_packages :nth-child(2) p/*Second package title colour*/
 {
     background-color: #6b7093;
 }
-.package_packages :nth-child(3) p
+.package_packages :nth-child(3) p/*Third package title colour*/
 {
     background-color: #aa994d;
 }
 
-.package_packages div h3,.package_packages div p {
+.package_packages div h3,.package_packages div p { 
     width:100%;
     margin:0%;
 }
 .package_packages div h3 {
     background-color: #0f0f0f;
 }
-.package_packages div p {
+.package_packages div p { /*Lachlan - Ensure the top bar of the package is rounded at top*/
    
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
 }
-.package_packages div ul {
+.package_packages div ul { /*Lachlan - contains all the checkbox items*/
     text-align: center;
     padding:5%;
     margin-bottom: 0;
     margin-top: 0;
 }
-.package_packages div ul li{
+.package_packages div ul li{ /*Lachlan - checkbox item*/
     list-style-type: none;
     background-color: #3d58cd;
-    margin-top: 4%;
+    margin-top: 4%; /*Just to help spread them out*/
     height:fit-content;
 }
 
-.package_packages div button {
+.package_packages div button { /*Lachlan - Bottom package purchase button*/
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     margin-top:auto;
